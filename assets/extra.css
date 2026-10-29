@@ -1,0 +1,38 @@
+/* Survival Frontier wiki: teal like the mod's title art */
+:root {
+  --md-primary-fg-color: #1f8a85;
+  --md-primary-fg-color--light: #4fd1c5;
+  --md-primary-fg-color--dark: #16625f;
+}
+
+/* item icons sit on the text line */
+.md-typeset img[width="20"],
+.md-typeset img[width="32"] {
+  vertical-align: middle;
+}
+
+/* game icons are drawn on a transparent background - give them a soft tile in tables */
+.md-typeset table img {
+  background: rgba(127, 127, 127, 0.12);
+  border-radius: 4px;
+}
+
+.md-typeset table:not([class]) td {
+  vertical-align: top;
+}
+
+/* home page hero */
+.sf-hero {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sf-hero img {
+  width: 260px;
+  max-width: 100%;
+  border-radius: 8px;
+}
+.sf-hero > div {
+  flex: 1 1 280px;
+}

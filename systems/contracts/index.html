@@ -1,0 +1,2414 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The complete guide to Survival Frontier, a co-op expansion custom game for Scrap Mechanic.">
+      
+      
+      
+        <link rel="canonical" href="https://soteark.github.io/survival-frontier-wiki/systems/contracts/">
+      
+      
+        <link rel="prev" href="../trader/">
+      
+      
+        <link rel="next" href="../kitchen/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Contract Board - Survival Frontier Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#contract-board" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Survival Frontier Wiki" class="md-header__button md-logo" aria-label="Survival Frontier Wiki" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Survival Frontier Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Contract Board
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="orange"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="orange"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../getting-started/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../trader/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Systems
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reference/items/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Survival Frontier Wiki" class="md-nav__button md-logo" aria-label="Survival Frontier Wiki" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Survival Frontier Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    First Steps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chat Commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../multiplayer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multiplayer & Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systems
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Systems
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trader/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Traveling Trader
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contract Board
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contract Board
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-board-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The board window
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#offers-refreshes-and-new-postings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Offers, refreshes and new postings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accepting-abandoning-and-claiming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accepting, abandoning and claiming
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contract-tiers-and-distances" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contract tiers and distances
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contract-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contract types
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contract types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#supply-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supply Run
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#courier-sealed-parcel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Courier (Sealed Parcel)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pest-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pest Control
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#survey-post-survey-beacon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Survey Post (Survey Beacon)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#salvage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Salvage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#catch-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Catch Order
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rewards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rewards
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rewards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#backpack-expansion-tier-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backpack Expansion (tier 5)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frontier-standing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frontier Standing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outpost-boards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Outpost Boards
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logbook-compass-and-markers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logbook, compass and markers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playing-with-a-party" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Playing with a party
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kitchen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frontier Kitchen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fishing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fishing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clearing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Land Clearing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../remote-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Remote Control
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../power/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Power
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backpack/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backpack Expansions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scrapper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scrapper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pipe-coupler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipe Coupler
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scannerbot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scannerbot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gyro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gyro Parts (experimental)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/items/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    All Items
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/recipes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Crafting Recipes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/dishes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dishes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/fish/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fish
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-board-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The board window
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#offers-refreshes-and-new-postings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Offers, refreshes and new postings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accepting-abandoning-and-claiming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accepting, abandoning and claiming
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contract-tiers-and-distances" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contract tiers and distances
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contract-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contract types
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contract types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#supply-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supply Run
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#courier-sealed-parcel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Courier (Sealed Parcel)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pest-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pest Control
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#survey-post-survey-beacon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Survey Post (Survey Beacon)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#salvage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Salvage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#catch-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Catch Order
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rewards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rewards
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rewards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#backpack-expansion-tier-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backpack Expansion (tier 5)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frontier-standing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frontier Standing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outpost-boards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Outpost Boards
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logbook-compass-and-markers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logbook, compass and markers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playing-with-a-party" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Playing with a party
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="contract-board">Contract Board<a class="headerlink" href="#contract-board" title="Permanent link">&para;</a></h1>
+<p>The Contract Board is where the whole party picks up side missions out on the frontier: supply runs, courier jobs, pest control, survey posts, salvage hauls and catch orders. Every contract you finish pays <strong>Frontier Scrip</strong> plus materials (and often food), and raises the party's <strong>Frontier Standing</strong>. Higher Standing brings harder contracts, farther from home, that pay more. The first board stands at the Hideout. Later you can buy <strong>Outpost Boards</strong> from the Traveling Trader to post contracts deeper in the wilderness.</p>
+<div class="admonition info">
+<p class="admonition-title">At a glance</p>
+<ul>
+<li><strong>Where:</strong> the Contract Board stands next to the trader at the <strong>Hideout</strong>. It's placed there automatically and can't be crafted.</li>
+<li><strong>4 offers</strong> and up to <strong>3 active contracts</strong>, shared by the whole party.</li>
+<li><strong>New offers every 20 minutes</strong>, or right away with <strong>New postings</strong> for 2 × your rank in scrip.</li>
+<li><strong>6 contract types:</strong> Supply Run, Courier, Pest Control, Survey Post, Salvage, Catch Order.</li>
+<li><strong>Frontier Standing</strong> goes from rank 1 to rank 5. You need 5 / 15 / 35 / 70 finished contracts for ranks 2-5.</li>
+<li><strong>Rewards:</strong> 3-94 Frontier Scrip, a material bundle, a 50% chance of Frontier dishes. Tier 5 contracts also have a hidden chance of a <a href="../backpack/">Backpack Expansion</a>.</li>
+<li><strong>Outpost Boards</strong> (rank 3, from the <a href="../trader/">Traveling Trader</a>) post contracts around themselves once they stand at least <strong>1.5 km</strong> from every other board.</li>
+<li>Active contracts show up in the <strong>Logbook</strong>, the quest tracker and the <strong>compass</strong>.</li>
+</ul>
+</div>
+<h2 id="the-board-window">The board window<a class="headerlink" href="#the-board-window" title="Permanent link">&para;</a></h2>
+<p>Press <strong>Use</strong> on a board to open the <em>Frontier Contracts</em> window.</p>
+<ul>
+<li><strong>Top line:</strong> your Frontier Standing, how many contracts the party has finished, and how many more you need for the next rank.</li>
+<li><strong>Available (left):</strong> up to 4 offers. Each card shows the contract, its <strong>tier</strong>, where it is (for example "about 1.9 km north-east of Outpost 2"), and the reward. Click <strong>Accept</strong> to take one.</li>
+<li><strong>Active (right):</strong> up to 3 contracts the party is working on, each with a progress line and its reward. The main button changes with what the contract needs:<ul>
+<li><strong>Hand in</strong> for Supply Runs and Catch Orders</li>
+<li><strong>New parcel</strong> / <strong>New beacon</strong> to get a replacement for a lost Sealed Parcel or Survey Beacon</li>
+<li><strong>Claim</strong> once the contract is done</li>
+</ul>
+</li>
+<li><strong>Abandon</strong> gives up an active contract.</li>
+<li><strong>Footer:</strong> time left until the next refresh. On an Outpost Board it also says whether that outpost is open, and if not, why.</li>
+</ul>
+<p>Every board shows the <strong>same</strong> contracts. Hand-ins, claims and replacement items work at <strong>any</strong> Contract Board, the Hideout's or an outpost's. Salvage is the one exception (see <a href="#salvage">Salvage</a>).</p>
+<h2 id="offers-refreshes-and-new-postings">Offers, refreshes and new postings<a class="headerlink" href="#offers-refreshes-and-new-postings" title="Permanent link">&para;</a></h2>
+<ul>
+<li>The board always tries to keep <strong>4 offers</strong>, and avoids repeating a contract type, so the 4 offers are usually 4 different types.</li>
+<li><strong>Accepting</strong> an offer does <strong>not</strong> put a new one in its place. A new offer appears when a contract is <strong>claimed</strong>, at the next refresh, or when someone buys new postings.</li>
+<li><strong>Every 20 minutes</strong> all offers nobody has accepted are replaced. Everyone gets a chat line. Players within 200 m of the Hideout board also get an on-screen alert, but only while the party has a free active slot.</li>
+<li><strong>New postings</strong> replaces every unaccepted offer right away. It costs <strong>2 × your Standing rank</strong> in Frontier Scrip (2 at rank 1, 10 at rank 5), paid by whoever clicks. It doesn't reset the 20-minute timer.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>New postings cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>2 scrip</td>
+</tr>
+<tr>
+<td>2</td>
+<td>4 scrip</td>
+</tr>
+<tr>
+<td>3</td>
+<td>6 scrip</td>
+</tr>
+<tr>
+<td>4</td>
+<td>8 scrip</td>
+</tr>
+<tr>
+<td>5</td>
+<td>10 scrip</td>
+</tr>
+</tbody>
+</table>
+<h2 id="accepting-abandoning-and-claiming">Accepting, abandoning and claiming<a class="headerlink" href="#accepting-abandoning-and-claiming" title="Permanent link">&para;</a></h2>
+<ul>
+<li>You can only accept while the party has fewer than <strong>3</strong> active contracts.</li>
+<li>Courier and Survey Post contracts give <strong>the player who accepts</strong> the item they need (a Sealed Parcel or a Survey Beacon). If that player's inventory is full, the contract can't be accepted.</li>
+<li><strong>Abandoning</strong> puts the contract back on the board <strong>exactly as it was offered</strong>: same site, same reward. It only goes back if there's a free offer slot (fewer than 4 offers). Its progress is reset, and any Salvage Crate already out in the world disappears.</li>
+<li>If items were already handed in, Abandon asks first: the button turns into <strong>Confirm</strong> for a few seconds, and the handed-in items go back to <strong>the player who abandons</strong>. That player needs room for them.</li>
+<li><strong>Claiming</strong> gives the <strong>whole reward to the player who clicks Claim</strong>. If that player doesn't have room, nothing is lost. Make space and claim again.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Refunds on \"any\" orders</p>
+<p>On an "(any)" order, such as <em>Lake Fish (any)</em> or <em>Campfire dishes (any)</em>, abandoning gives back the same <strong>number</strong> of items, but all as <strong>one</strong> kind from the list. That kind may not be what you handed in.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">No rerolling by clicking</p>
+<p>Accepting and then abandoning leaves the board exactly as it was. Rewards are set when the offer is posted. To see different offers, pay for <strong>New postings</strong> or wait for the refresh.</p>
+</div>
+<h2 id="contract-tiers-and-distances">Contract tiers and distances<a class="headerlink" href="#contract-tiers-and-distances" title="Permanent link">&para;</a></h2>
+<p>Each contract has a <strong>tier</strong> from 1 to 5. Offers are posted at your Standing rank or one below it:</p>
+<table>
+<thead>
+<tr>
+<th>Standing rank</th>
+<th>Tiers offered</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1-2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>2-3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>3-4</td>
+</tr>
+<tr>
+<td>5</td>
+<td>4-5</td>
+</tr>
+</tbody>
+</table>
+<p>Contracts with a location (Courier, Pest Control, Survey Post, Salvage) send you a set distance from a board. The distance depends on the tier:</p>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Distance from the board</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>250-500 m</td>
+</tr>
+<tr>
+<td>2</td>
+<td>400-800 m</td>
+</tr>
+<tr>
+<td>3</td>
+<td>700-1,300 m</td>
+</tr>
+<tr>
+<td>4</td>
+<td>1,100-1,900 m</td>
+</tr>
+<tr>
+<td>5</td>
+<td>1,600-2,600 m</td>
+</tr>
+</tbody>
+</table>
+<p>Each site is picked when the offer is posted, around the Hideout board or a random open Outpost Board. The card tells you the distance, the compass direction and which board it's measured from. Sites stay inside the world, avoid lakes, and are never closer to the start area than the board is, so contracts don't send you back toward spawn.</p>
+<p>There are <strong>no time limits</strong>: an active contract stays until you finish it or abandon it.</p>
+<h2 id="contract-types">Contract types<a class="headerlink" href="#contract-types" title="Permanent link">&para;</a></h2>
+<h3 id="supply-run">Supply Run<a class="headerlink" href="#supply-run" title="Permanent link">&para;</a></h3>
+<p>Hand in items at any board. <strong>Partial hand-ins count</strong>: each <strong>Hand in</strong> click takes as many matching items from your inventory as the contract still needs. Each offer asks for one of these:</p>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Possible asks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>6 Cotton · 60 Metal Blocks · 62 Potatoes · 12 Corn · 3 Campfire dishes (any)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>7 Component Kits · 4 Glue · 20 Cotton · 50 Chemicals · 3 Homestead dishes (any)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>26 Batteries · 37 Gas Canisters · 4 Circuit Boards · 11 Beeswax · 2 Expedition dishes (any)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>11 Circuit Boards · 6 Crystals · 11 Glowpoop · 3 Frontier Feast dishes (any)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>16 Circuit Boards · 10 Crystals · 16 Glowpoop · 4 Frontier Feast dishes (any)</td>
+</tr>
+</tbody>
+</table>
+<p>Dish asks take any dish of that cooking tier. See the <a href="../kitchen/">Frontier Kitchen</a>.</p>
+<h3 id="courier-sealed-parcel">Courier (Sealed Parcel)<a class="headerlink" href="#courier-sealed-parcel" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../assets/icons/5d39dd15-9ecd-47da-81ab-a5f728797ffd.png" width="32" /> You get a <strong>Sealed Parcel</strong> when you accept. Carry it to the marked spot. The delivery happens by itself when <strong>any</strong> party member with a parcel in their inventory gets within <strong>20 m</strong> of the spot. Lost the parcel? Any board's <strong>New parcel</strong> button gives you another.</p>
+<h3 id="pest-control">Pest Control<a class="headerlink" href="#pest-control" title="Permanent link">&para;</a></h3>
+<p>A pack of robots is causing trouble at a marked site. Destroy the required number <strong>within 150 m of the site</strong>. The pack spawns when someone in the party first gets within 150 m. Wild robots of the same kind that happen to be near the site count too.</p>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Target (one is picked)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>4 Totebots</td>
+</tr>
+<tr>
+<td>2</td>
+<td>3 Haybots</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3 Tapebots</td>
+</tr>
+<tr>
+<td>4</td>
+<td>2 Farmbots, or 3 Tapebots</td>
+</tr>
+<tr>
+<td>5</td>
+<td>3 Farmbots, or 7 Tapebots</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Robots that <strong>die in water</strong> (drowned, swimming or diving) don't count.</li>
+<li><strong>Raiders attacking your farm don't count.</strong></li>
+<li>One kill counts for one contract only. If two active hunts want the same robot, the older contract gets it.</li>
+<li>If the site turns out to be under water, the pack is moved to the nearest dry ground. If there's none nearby, the site is moved and marked somewhere drier.</li>
+</ul>
+<h3 id="survey-post-survey-beacon">Survey Post (Survey Beacon)<a class="headerlink" href="#survey-post-survey-beacon" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../assets/icons/ea2d3427-9e94-4ac2-817b-fc47bafcfefb.png" width="32" /> You get a <strong>Survey Beacon</strong> when you accept. Set it up within <strong>25 m</strong> of the marked site and keep it up for <strong>10 seconds</strong>. From tier 2 it has to sit high up on a structure you <strong>build there</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Beacon height above the ground</th>
+<th>Structure size</th>
+<th>Power needed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>on the ground</td>
+<td>none</td>
+<td>no</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2 m</td>
+<td>8 parts</td>
+<td>no</td>
+</tr>
+<tr>
+<td>3</td>
+<td>4 m</td>
+<td>18 parts</td>
+<td>no</td>
+</tr>
+<tr>
+<td>4</td>
+<td>7 m</td>
+<td>35 parts</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>5</td>
+<td>10 m</td>
+<td>60 parts</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Height</strong> is measured from the beacon's base down to the terrain directly below it.</li>
+<li><strong>Parts</strong> are counted per placed part. One dragged run of blocks counts as <strong>one</strong> part, so build with separate pieces.</li>
+<li>The structure must be <strong>static</strong> (built in place). A beacon on a vehicle doesn't count, even a parked one.</li>
+<li><strong>Power</strong> (tiers 4-5): the structure must include a <strong>Battery Container</strong>, <strong>Solar Panel</strong>, <strong>Mega Battery</strong> or <strong>Mega Battery Bank</strong>.</li>
+<li>The progress line tells you what's still missing (for example "Beacon 3.2 / 7 m up, structure 20 / 35 parts - needs a battery or solar panel on it") and counts the 10 seconds once everything is right. If the post stops meeting the requirements, the count starts over.</li>
+<li>You can pick the beacon back up at any time. Lost it? Any board's <strong>New beacon</strong> button gives you another.</li>
+</ul>
+<h3 id="salvage">Salvage<a class="headerlink" href="#salvage" title="Permanent link">&para;</a></h3>
+<p>A <strong>Salvage Crate</strong> waits at the marked spot. It appears once someone in the party gets within <strong>150 m</strong>. Haul it to within <strong>20 m</strong> of the board the contract names. It's handed in by itself when it gets there.</p>
+<p>Crates are <strong>too heavy to carry by hand</strong>, <strong>nothing can be built onto them</strong>, and they can't be picked up with the hammer. You need a vehicle that can pick a crate up and carry it: a flatbed, crane or loader. Bigger crates pay more:</p>
+<table>
+<thead>
+<tr>
+<th>Crate</th>
+<th>Size (blocks)</th>
+<th>Pay</th>
+<th>Tier 1</th>
+<th>Tier 2</th>
+<th>Tier 3</th>
+<th>Tier 4</th>
+<th>Tier 5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="" src="../../assets/icons/b7ec5125-d90b-4f15-b2bc-4a5c9b40ffeb.png" width="32" /> Small Salvage Crate</td>
+<td>2×2×2</td>
+<td>×1.0</td>
+<td>60%</td>
+<td>20%</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td><img alt="" src="../../assets/icons/f68e14d7-1e3f-4a48-bfa7-afabafe419b0.png" width="32" /> Salvage Crate</td>
+<td>3×3×3</td>
+<td>×1.25</td>
+<td>40%</td>
+<td>60%</td>
+<td>30%</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td><img alt="" src="../../assets/icons/b0dc4cc2-b013-4ed9-ad29-5467cb470641.png" width="32" /> Large Salvage Crate</td>
+<td>5×5×5</td>
+<td>×1.6</td>
+<td>–</td>
+<td>20%</td>
+<td>60%</td>
+<td>50%</td>
+<td>–</td>
+</tr>
+<tr>
+<td><img alt="" src="../../assets/icons/c34c7211-c44a-4ab4-b7d1-bb21aeb0e848.png" width="32" /> Huge Salvage Crate</td>
+<td>8×8×8</td>
+<td>×2.2</td>
+<td>–</td>
+<td>–</td>
+<td>10%</td>
+<td>50%</td>
+<td>60%</td>
+</tr>
+<tr>
+<td><img alt="" src="../../assets/icons/9719fb89-930e-43e6-99f6-d100e97cabe4.png" width="32" /> Colossal Salvage Crate</td>
+<td>12×12×12</td>
+<td>×2.5</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>40%</td>
+</tr>
+</tbody>
+</table>
+<p>The crate size is shown on the offer before you accept.</p>
+<ul>
+<li><strong>Where to deliver:</strong> a contract posted from an Outpost Board goes back to <strong>that Outpost Board</strong>, as long as it's still open and hasn't been moved more than 20 m. Otherwise (and for everything posted from the Hideout) it goes to the <strong>Hideout board</strong>.</li>
+<li>The quest marker <strong>follows the crate</strong> once it's found.</li>
+<li>If the crate is <strong>destroyed</strong>, a new one waits back at the site.</li>
+<li>If the site is under water, the crate is placed on the nearest dry ground within 96 m. If there isn't any, the site moves about 250 m and is marked again.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Hauling big crates</p>
+<ul>
+<li>Look at the crate size before you accept. A 2-block crate fits on a small cart, but a Huge (8 blocks) or Colossal (12 blocks) crate needs a real hauler: a wide flatbed with a crane or a lifter.</li>
+<li>Bring the vehicle with you. The crate only spawns once someone is within 150 m of the site, and you can't build onto it to make it drivable.</li>
+<li>An open Outpost Board near the site gives salvage from its contracts a much shorter trip home.</li>
+</ul>
+</div>
+<h3 id="catch-order">Catch Order<a class="headerlink" href="#catch-order" title="Permanent link">&para;</a></h3>
+<p>Catch fish and hand them in at any board, like a Supply Run (partial hand-ins count). See <a href="../fishing/">Fishing</a>. In game, <strong>/fish</strong> shows where each fish lives.</p>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Possible orders</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>6 Lake Fish (any of Pond Perch, Mud Carp, Moonfin, Sunscale Trout) · 4 Glowgills · 4 Slick Minnows</td>
+</tr>
+<tr>
+<td>2</td>
+<td>3 Moonfins · 3 Sunscale Trout · 6 Mud Carp · 6 Glowgills</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1 Ironjaw Pike · 2 Sludge Eels · 2 Tarback Catfish</td>
+</tr>
+<tr>
+<td>4</td>
+<td>2 Ironjaw Pike · 1 Three-Eyed Tetra · 2 Tarback Catfish</td>
+</tr>
+<tr>
+<td>5</td>
+<td>2 Three-Eyed Tetras · 3 Big Fish (any of Ironjaw Pike, Sludge Eel, Tarback Catfish) · 1 Frontier Sturgeon* · 1 Crude Leviathan*</td>
+</tr>
+</tbody>
+</table>
+<p>* Legendary orders are only offered once the party has a Frontier Rod, because these fish can't be landed without one. Orders for fish that need a Carbon Rod say so in their title.</p>
+<p>Catch Orders pay <strong>bait</strong> on top of the usual reward:</p>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Bait</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>8 Basic Bait</td>
+</tr>
+<tr>
+<td>2</td>
+<td>6 Glow Bait</td>
+</tr>
+<tr>
+<td>3</td>
+<td>8 Glow Bait</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4 Prime Bait</td>
+</tr>
+<tr>
+<td>5</td>
+<td>6 Prime Bait</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">The Frontier Rod</p>
+<p>Catch Orders of <strong>tier 3 and up</strong> include a <strong>Frontier Rod</strong> in their reward until someone in the party claims one. The Frontier Rod has no recipe, so this is the only way to get it. After the first one is claimed, new orders stop paying it.</p>
+</div>
+<h2 id="rewards">Rewards<a class="headerlink" href="#rewards" title="Permanent link">&para;</a></h2>
+<p>Every contract pays three things:</p>
+<ol>
+<li>
+<p><strong>Frontier Scrip.</strong> The amount depends on the tier and the contract type:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Tier 1</th>
+<th>Tier 2</th>
+<th>Tier 3</th>
+<th>Tier 4</th>
+<th>Tier 5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Supply Run</td>
+<td>3</td>
+<td>6</td>
+<td>10</td>
+<td>16</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Courier</td>
+<td>4</td>
+<td>7</td>
+<td>12</td>
+<td>19</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Survey Post</td>
+<td>4</td>
+<td>8</td>
+<td>13</td>
+<td>21</td>
+<td>33</td>
+</tr>
+<tr>
+<td>Catch Order</td>
+<td>4</td>
+<td>8</td>
+<td>13</td>
+<td>21</td>
+<td>33</td>
+</tr>
+<tr>
+<td>Pest Control</td>
+<td>5</td>
+<td>10</td>
+<td>16</td>
+<td>26</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Salvage (Small crate)</td>
+<td>5</td>
+<td>9</td>
+<td>15</td>
+<td>24</td>
+<td>38</td>
+</tr>
+<tr>
+<td>Salvage (Salvage Crate)</td>
+<td>6</td>
+<td>11</td>
+<td>19</td>
+<td>30</td>
+<td>47</td>
+</tr>
+<tr>
+<td>Salvage (Large)</td>
+<td>7</td>
+<td>14</td>
+<td>24</td>
+<td>38</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Salvage (Huge)</td>
+<td>10</td>
+<td>20</td>
+<td>33</td>
+<td>53</td>
+<td>83</td>
+</tr>
+<tr>
+<td>Salvage (Colossal)</td>
+<td>11</td>
+<td>23</td>
+<td>38</td>
+<td>60</td>
+<td>94</td>
+</tr>
+</tbody>
+</table>
+<p>Not every crate size appears at every tier (see the <a href="#salvage">crate table</a>). Spend scrip at the <a href="../trader/">Traveling Trader</a>.</p>
+</li>
+<li>
+<p><strong>A material bundle</strong>, picked at random from the contract's tier:</p>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Base bundle (one of)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>30 Wood Blocks · 20 Metal Blocks · 1 Component Kit</td>
+</tr>
+<tr>
+<td>2</td>
+<td>3 Component Kits · 4 Glue · 2 Batteries</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3 Circuit Boards · 5 Batteries · 10 Gas Canisters</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4 Circuit Boards · 5 Component Kits · 8 Batteries</td>
+</tr>
+<tr>
+<td>5</td>
+<td>6 Circuit Boards · 8 Component Kits · 7 Crystals</td>
+</tr>
+</tbody>
+</table>
+<p>The base amount grows with better-paying contracts, but more slowly than the scrip does: about ×1.1 for Courier, Survey Post and Catch Order, ×1.27 for Pest Control, and from ×1.22 (Small crate) up to ×1.94 (Colossal crate) for Salvage. Supply Runs pay the base amount.</p>
+</li>
+<li>
+<p><strong>A 50% chance of Frontier dishes:</strong> 2 dishes, or 3 on tier 4-5 contracts. They come from the highest cooking tier the party has researched (capped at the contract's tier), and the party's researched dishes are preferred. If the party hasn't researched any dishes yet, they're Campfire dishes. Traveling Trader dishes are never paid out.</p>
+</li>
+</ol>
+<p>Catch Orders also pay bait and possibly the Frontier Rod (see <a href="#catch-order">Catch Order</a>).</p>
+<p>The full reward is listed on the card before you accept and doesn't change afterwards. The one exception is the Backpack Expansion.</p>
+<h3 id="backpack-expansion-tier-5">Backpack Expansion (tier 5)<a class="headerlink" href="#backpack-expansion-tier-5" title="Permanent link">&para;</a></h3>
+<p>On <strong>tier 5</strong> contracts there's a chance the reward also includes a <a href="../backpack/">Backpack Expansion</a>. The board shows the chance on the card. The roll happens <strong>once, when the contract is finished</strong>, so it can't be seen in advance or rerolled:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Chance (tier 5 only)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Supply Run</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>Courier</td>
+<td>3%</td>
+</tr>
+<tr>
+<td>Pest Control</td>
+<td>8%</td>
+</tr>
+<tr>
+<td>Survey Post</td>
+<td>8%</td>
+</tr>
+<tr>
+<td>Catch Order</td>
+<td>8%</td>
+</tr>
+<tr>
+<td>Salvage</td>
+<td>15%</td>
+</tr>
+</tbody>
+</table>
+<p>If it hits, the "Contract done" message says so, and the expansion is added to the reward you claim.</p>
+<h2 id="frontier-standing">Frontier Standing<a class="headerlink" href="#frontier-standing" title="Permanent link">&para;</a></h2>
+<p>Every finished contract adds one to the party's count. Standing is shared by the whole party.</p>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Contracts finished</th>
+<th>What it brings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>Tier 1 contracts</td>
+</tr>
+<tr>
+<td>2</td>
+<td>5</td>
+<td>Tier 1-2 contracts</td>
+</tr>
+<tr>
+<td>3</td>
+<td>15</td>
+<td>Tier 2-3 contracts. Tier 3 Catch Orders (the Frontier Rod). <strong>Outpost Boards</strong> can be bought from the Traveling Trader.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>35</td>
+<td>Tier 3-4 contracts. Powered Survey Posts.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>70</td>
+<td>Tier 4-5 contracts. The Backpack Expansion chance. Legendary Catch Orders (with a Frontier Rod). New postings cost 10 scrip.</td>
+</tr>
+</tbody>
+</table>
+<p>When the party ranks up, everyone gets an alert. Type <strong>/contracts</strong> in chat to see your rank, how many contracts you've finished and every active contract with its progress. See <a href="../../commands/">Commands</a>.</p>
+<h2 id="outpost-boards">Outpost Boards<a class="headerlink" href="#outpost-boards" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../../assets/icons/d6984d40-2f74-493e-bd07-f1c2f3a32ac7.png" width="32" /> An <strong>Outpost Board</strong> lets the party take contracts deeper into the frontier.</p>
+<ul>
+<li><strong>How to get one:</strong> buy it from the <a href="../trader/">Traveling Trader</a> for Frontier Scrip once the party reaches <strong>Frontier Standing rank 3</strong>. The first one costs <strong>400 scrip</strong>, and each one after that costs <strong>200 more</strong> (400, 600, 800 …). The party can buy at most <strong>6</strong>.</li>
+<li><strong>Placement rule:</strong> an Outpost Board only <strong>opens</strong> if it is:<ul>
+<li>built in place on solid ground, <strong>not on a vehicle</strong></li>
+<li>out in the open world</li>
+<li>at least <strong>1.5 km</strong> (measured flat on the map) from the Hideout board <strong>and</strong> from every Outpost Board that was already open</li>
+</ul>
+</li>
+<li>Open boards are numbered in order (<em>Outpost 1</em>, <em>Outpost 2</em> …). If one isn't open, its window's footer tells you why, for example "it's only 0.9 km from the board at the Hideout - it needs 1.5 km". When a board opens, everyone gets an alert.</li>
+<li><strong>What it does:</strong> once it's open, new location contracts are posted around it as well as around the Hideout. Each new site is centred on one of the open boards, picked at random. Salvage from those contracts is delivered to that Outpost Board. Like any board, it also takes hand-ins, claims and replacement parcels and beacons.</li>
+<li><strong>Moving it:</strong> pick it back up with the hammer and set it up somewhere else. You can't lift it onto a vehicle or build onto it. If an outpost is removed, a closed one nearby may open in its place.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Where to put an outpost</p>
+<p>Put Outpost Boards near the far areas you want to work. Contracts posted from an outpost measure their distance from it, so your trips start out there and not at the Hideout. Salvage crates from those contracts only need to reach that outpost.</p>
+</div>
+<h2 id="logbook-compass-and-markers">Logbook, compass and markers<a class="headerlink" href="#logbook-compass-and-markers" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Every active contract appears as a <strong>side quest</strong> in the vanilla <strong>Logbook</strong> and quest tracker. The title and progress update as you go.</li>
+<li>Every active contract with a location gets a <strong>quest marker</strong> in the world and on the compass. For Salvage, the marker moves to the crate once it's found. The contract you track in the Logbook has a <strong>bright</strong> marker and the others are <strong>dimmed</strong>, so you can follow every contract without switching the tracked one.</li>
+<li>Finished, claimed and abandoned contracts leave the Logbook by themselves.</li>
+</ul>
+<h2 id="playing-with-a-party">Playing with a party<a class="headerlink" href="#playing-with-a-party" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Contracts, offers and Standing belong to the <strong>whole party</strong>. Everyone sees the same board, and anyone can accept, hand in, abandon or claim.</li>
+<li>Anyone's progress counts. Any player can deliver a parcel, kill the robots, set up the beacon or haul the crate.</li>
+<li>Hand-ins come from the inventory of <strong>the player who clicks</strong>.</li>
+<li>Items given on accept (parcel, beacon) and the reward on claim go to <strong>the player who clicks</strong>. Share them out yourselves.</li>
+<li>New postings are paid by whoever clicks the button.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../trader/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Traveling Trader">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Traveling Trader
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kitchen/" class="md-footer__link md-footer__link--next" aria-label="Next: Frontier Kitchen">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Frontier Kitchen
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Survival Frontier is a fan-made Scrap Mechanic custom game. Scrap Mechanic and its assets belong to Axolot Games.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "navigation.footer", "navigation.instant", "search.suggest", "search.highlight", "content.tooltips", "toc.follow"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>
