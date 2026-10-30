@@ -566,6 +566,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#connection-to-host-timed-out-when-joining" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Connection to host timed out" when joining
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#reporting-bugs" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1271,6 +1282,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#connection-to-host-timed-out-when-joining" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Connection to host timed out" when joining
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#reporting-bugs" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1318,6 +1340,15 @@
 <p class="admonition-title">Tip</p>
 <p>Close the game before Steam installs mod updates. Updating while the game is running is what usually leaves a stale cache behind.</p>
 </div>
+<h2 id="connection-to-host-timed-out-when-joining">"Connection to host timed out" when joining<a class="headerlink" href="#connection-to-host-timed-out-when-joining" title="Permanent link">&para;</a></h2>
+<p><strong>Symptoms:</strong> the host can join your game, but joining theirs loads for about a minute and then fails with "Connection to host timed out. Please check your Internet connection and try again."</p>
+<p>With Survival Frontier 1.4.0 this happened in worlds where a lot of the map had been explored, because of how <a href="../systems/clearing/">land clearing</a> saved its progress. <strong>1.4.1 fixes it.</strong></p>
+<ol>
+<li>Everyone updates to 1.4.1. Check with <code>/frontierversion</code>.</li>
+<li>The host loads their world once. It converts itself within a few seconds of loading.</li>
+<li>Join again.</li>
+</ol>
+<p>If it still times out, check the usual network causes on the <strong>host's</strong> PC: the game allowed through Windows Firewall on both Private and Public networks, no third-party firewall or VPN blocking it. Then send a <code>/bugreport</code>.</p>
 <h2 id="reporting-bugs">Reporting bugs<a class="headerlink" href="#reporting-bugs" title="Permanent link">&para;</a></h2>
 <p>Type <code>/bugreport</code> in game. A window opens where you describe what happened. The report is:</p>
 <ul>
