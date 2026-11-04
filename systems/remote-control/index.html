@@ -570,6 +570,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1063,6 +1067,62 @@
   
   
     <li class="md-nav__item">
+      <a href="../logistics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Base Logistics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../milestones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Milestone Log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../scannerbot/" class="md-nav__link">
         
   
@@ -1464,7 +1524,7 @@
 <li><strong>Kept loaded:</strong> while you drive, the 3 x 3 map cells around the controller (192 x 192 m) stay loaded, and for 10 seconds after you let go.</li>
 <li><strong>Remote Cameras:</strong> up to 4 per controller. Jump cycles through them.</li>
 <li><strong>Wireless:</strong> 20 channels. Both ends have to be in a loaded part of the world.</li>
-<li><strong>Teleport Pads:</strong> 20 channels, any number of pads per channel. Each jump costs 1 charge from a wired Inverter, or 1 Battery from your inventory.</li>
+<li><strong>Teleport Pads:</strong> 20 channels, any number of pads per channel. Each jump costs 1 charge from a wired Inverter, or 1 Battery from your inventory. The pad you arrive at must be wired to an Inverter with charge.</li>
 <li><strong>How to get them:</strong> all are Craftbot recipes unlocked by <a href="../trader/">Traveling Trader</a> blueprints.</li>
 </ul>
 </div>
@@ -1512,7 +1572,7 @@
 <td>Teleport Pad</td>
 <td>Legendary</td>
 <td>300 scrip</td>
-<td>-</td>
+<td>Inverter</td>
 </tr>
 </tbody>
 </table>
@@ -1735,16 +1795,17 @@
 <p>Pads on the same channel are linked, wherever they are in the world, even in areas nobody has loaded.</p>
 <ul>
 <li><strong>Channels:</strong> 1 to 20, new pads start on channel 1. <strong>Tinker</strong> goes to the next channel, <strong>crouch + Tinker</strong> to the previous one.</li>
-<li><strong>Teleport:</strong> press <strong>Use</strong> on a pad to jump to the next pad on its channel. Two pads on a channel work as a pair. With three or more, each jump goes on to the next pad in a fixed order, so you cycle through them all.</li>
-<li><strong>No other pad on the channel:</strong> "No other Teleport Pad on channel N".</li>
+<li><strong>Teleport:</strong> press <strong>Use</strong> on a pad to jump to the next pad on its channel that can receive you. Two pads on a channel work as a pair. With three or more, each jump goes on to the next pad in a fixed order, so you cycle through them all.</li>
+<li><strong>Receiving a jump:</strong> a pad only receives while it's wired to an <strong>Inverter with charge</strong> and its switch (if it has one) is on. Pads that can't receive are skipped. An unwired pad can still send you, for 1 Battery from your inventory. So a round trip needs both ends powered.</li>
+<li><strong>No other pad on the channel:</strong> "No other Teleport Pad on channel N". <strong>No pad that can receive:</strong> "No Teleport Pad on channel N can receive you - each needs a charged Inverter and its switch on".</li>
 <li><strong>What teleports:</strong> only the player who used the pad. Vehicles, creations and items stay behind.</li>
 <li><strong>Cooldown:</strong> none. You can jump again as soon as you arrive.</li>
 </ul>
 <h3 id="power">Power<a class="headerlink" href="#power" title="Permanent link">&para;</a></h3>
 <p>Each jump costs <strong>1 charge</strong>:</p>
 <ol>
-<li>From an <strong>Inverter</strong> wired into the pad, if it has charge (see <a href="../power/">Power</a>). A pad takes up to 2 wires, and only from Inverters.</li>
-<li>Otherwise <strong>1 Battery</strong> from your inventory.</li>
+<li>From an <strong>Inverter</strong> wired into the pad you leave from, if it has charge (see <a href="../power/">Power</a>). A pad takes up to 2 wires, and only from Inverters.</li>
+<li>Otherwise <strong>1 Battery</strong> from your inventory (an unwired pad can send you, but never receive you).</li>
 <li>With neither: "Teleporting needs 1 charge from wired power, or a battery", and you stay put.</li>
 </ol>
 <p>In a world with unlimited inventory, jumps without wired power are free.</p>

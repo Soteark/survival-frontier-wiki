@@ -570,6 +570,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1129,6 +1133,62 @@
   
   
     <li class="md-nav__item">
+      <a href="../logistics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Base Logistics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../milestones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Milestone Log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../scannerbot/" class="md-nav__link">
         
   
@@ -1592,8 +1652,8 @@
 <p class="admonition-title">At a glance</p>
 <ul>
 <li><strong>Five tiers:</strong> Classics, then Campfire, Homestead, Expedition and Frontier Feast. All dishes in a tier have the same stats. Only the ingredients differ.</li>
-<li><strong>Buffs:</strong> Regeneration (all tiers), Damage resistance (Homestead and up), Deep breath (Expedition and up), random perks (Expedition gives 1, Frontier Feast gives 2).</li>
-<li><strong>Research:</strong> collecting a cooked dish gives +1 mastery in its tier. Researching a dish costs 3 / 5 / 8 / 12 mastery from the tier below.</li>
+<li><strong>Buffs:</strong> Regeneration (all tiers), Hearty (Campfire: hunger and thirst drop 25% slower), Damage resistance (Homestead and up), Deep breath (Expedition and up), random perks (Expedition gives 1, Frontier Feast gives 2).</li>
+<li><strong>Research:</strong> collecting a cooked dish gives +1 mastery in its tier. Researching the first dish of a tier costs 3 / 8 / 8 / 12 mastery from the tier below; every later dish of that tier costs half (2 / 4 / 4 / 6).</li>
 <li><strong>Shared by the party:</strong> mastery and researched recipes belong to the whole world. Buffs belong to each player.</li>
 <li><strong>Buffs don't stack.</strong> Eating again only replaces a buff that is weaker, or equally strong with less time left.</li>
 <li><strong>Campfire:</strong> crafted at the Workbench from 12 Scrap Wood and 4 Scrap Metal. It cooks the three Frontier Classics, one at a time.</li>
@@ -1639,7 +1699,7 @@
 <td><strong>Homestead</strong></td>
 <td>80 HP</td>
 <td>+2 HP/s for 40 s</td>
-<td>15% for 3 min</td>
+<td>15% for 5 min</td>
 <td>–</td>
 <td>–</td>
 </tr>
@@ -1647,7 +1707,7 @@
 <td><strong>Expedition</strong></td>
 <td>92 HP</td>
 <td>+3 HP/s for 45 s</td>
-<td>25% for 5 min</td>
+<td>25% for 8 min</td>
 <td>3 min</td>
 <td>1 random perk</td>
 </tr>
@@ -1655,23 +1715,24 @@
 <td><strong>Frontier Feast</strong></td>
 <td>98 HP</td>
 <td>+4 HP/s for 75 s</td>
-<td>35% for 8 min</td>
+<td>35% for 12 min</td>
 <td>5 min</td>
 <td>2 random perks</td>
 </tr>
 </tbody>
 </table>
+<p>Campfire dishes also give <strong>Hearty</strong>: hunger and thirst drop 25% slower for 2 min. A Campfire craft makes 2 portions; Smoked Pike makes 2, and the legendary-fish dishes Sturgeon Feast and Leviathan Steak make 4, so one legendary catch feeds the crew.</p>
 <p>Here is how much health regeneration gives back over its full duration, if you are hurt the whole time: Classics 15, Campfire 30, Homestead 80, Expedition 135, Frontier Feast 300.</p>
 <h3 id="what-the-buffs-do">What the buffs do<a class="headerlink" href="#what-the-buffs-do" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Regeneration</strong> heals the listed amount once per second while you are conscious and below full health.</li>
 <li><strong>Damage resistance</strong> reduces all damage you take by the listed percentage.</li>
 <li><strong>Deep breath</strong> keeps your air full for its whole duration, so you can stay underwater without running out of breath.</li>
-<li><strong>Perks</strong> are the game's normal food perks. Each one is picked at random from those you don't have yet: <strong>Bonus Health</strong> (+25 max HP), <strong>Hammer Speed</strong>, <strong>Fall Protection</strong> and <strong>High Jump</strong>. When you already have all four, more perks do nothing.</li>
+<li><strong>Perks</strong> are the game's normal food perks. Each one is picked at random from those you don't have yet: <strong>Bonus Health</strong> (+25 max HP), <strong>Hammer Speed</strong>, <strong>Fall Protection</strong> and <strong>High Jump</strong>. When you already have all four, more perks do nothing, and the message after eating says "perks full".</li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Knocked out = buffs gone</p>
-<p>Being knocked out removes <strong>all</strong> your food buffs and perks, including the +25 max HP from Bonus Health. A dish eaten while you are knocked out gives no buffs.</p>
+<p>Being knocked out removes <strong>all</strong> your food buffs and perks, including the +25 max HP from Bonus Health. If a friend revives you with a Revival Baguette, your food buffs come back (the game's perks don't); if you respawn instead, they are gone. A dish eaten while you are knocked out gives no buffs.</p>
 </div>
 <h3 id="health-is-capped-at-100">Health is capped at 100<a class="headerlink" href="#health-is-capped-at-100" title="Permanent link">&para;</a></h3>
 <p>Your maximum health is <strong>100 HP</strong>, or 125 with the Bonus Health perk. Healing past your maximum is wasted. So above Homestead, the big jump between tiers is in the buffs, not the heal itself. The trader's Frontier Feast dishes heal 103, and the extra 3 only counts if Bonus Health has raised your maximum.</p>
@@ -1734,7 +1795,8 @@
 <thead>
 <tr>
 <th>To research a...</th>
-<th>Costs</th>
+<th>First dish costs</th>
+<th>Each later dish</th>
 <th>Paid with</th>
 <th>Researchable dishes</th>
 <th>Cooks to research the whole tier</th>
@@ -1744,34 +1806,38 @@
 <tr>
 <td>Campfire dish</td>
 <td>3</td>
+<td>2</td>
 <td>Classics mastery</td>
 <td>6</td>
-<td>18 Classics cooks</td>
+<td>13 Classics cooks</td>
 </tr>
 <tr>
 <td>Homestead dish</td>
-<td>5</td>
+<td>8</td>
+<td>4</td>
 <td>Campfire mastery</td>
 <td>6</td>
-<td>30 Campfire cooks</td>
+<td>28 Campfire cooks</td>
 </tr>
 <tr>
 <td>Expedition dish</td>
 <td>8</td>
+<td>4</td>
 <td>Homestead mastery</td>
 <td>5</td>
-<td>40 Homestead cooks</td>
+<td>24 Homestead cooks</td>
 </tr>
 <tr>
 <td>Frontier Feast dish</td>
 <td>12</td>
+<td>6</td>
 <td>Expedition mastery</td>
 <td>4</td>
-<td>48 Expedition cooks</td>
+<td>30 Expedition cooks</td>
 </tr>
 </tbody>
 </table>
-<p>Classics are always known and are never researched. Any dish in a tier counts toward that tier's mastery, so you can cook the cheapest recipe over and over.</p>
+<p>Classics are always known and are never researched. Any dish in a tier counts toward that tier's mastery, so you can cook the cheapest recipe over and over. The dishes of a tier are equally strong, so the first one you research is the step up; the rest are half price for variety. A row whose mastery has nothing left to buy (every dish of the tier above is researched, or there is no tier above yet) says so instead of showing a count.</p>
 <div class="admonition info">
 <p class="admonition-title">Party-wide</p>
 <p>Mastery and researched recipes are saved with the world and shared by everyone in it. Anyone can cook to add mastery, and anyone can spend it. When a dish is researched, everyone gets a chat message. Food buffs are personal: each player has their own.</p>
@@ -1812,7 +1878,7 @@
 <td>72 scrip</td>
 <td>85 HP</td>
 <td>+2 HP/s for 48 s</td>
-<td>15% for 3 min 36 s</td>
+<td>15% for 6 min</td>
 <td>–</td>
 <td>–</td>
 </tr>
@@ -1821,7 +1887,7 @@
 <td>80 scrip</td>
 <td>97 HP</td>
 <td>+3 HP/s for 54 s</td>
-<td>25% for 6 min</td>
+<td>25% for 9 min 36 s</td>
 <td>3 min 36 s</td>
 <td>1 random perk</td>
 </tr>
@@ -1830,7 +1896,7 @@
 <td>192 scrip</td>
 <td>103 HP</td>
 <td>+4 HP/s for 90 s</td>
-<td>35% for 9 min 36 s</td>
+<td>35% for 14 min 24 s</td>
 <td>6 min</td>
 <td>2 random perks</td>
 </tr>
@@ -1955,7 +2021,7 @@
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Bank mastery early</p>
-<p>Classics mastery earned at the Campfire is saved. Cook there while you work toward a Cookbot, and you can research your first Campfire-tier dishes as soon as it's built. At 3 mastery per dish, 18 Classics cooks research all six.</p>
+<p>Classics mastery earned at the Campfire is saved. Cook there while you work toward a Cookbot, and you can research your first Campfire-tier dishes as soon as it's built. At 3 mastery for the first dish and 2 for each after it, 13 Classics cooks research all six.</p>
 </div>
 <h2 id="buff-stacking-and-refresh">Buff stacking and refresh<a class="headerlink" href="#buff-stacking-and-refresh" title="Permanent link">&para;</a></h2>
 <p>Food buffs <strong>don't stack</strong>. Each buff type (Regeneration, Damage resistance, Deep breath) is tracked on its own. When you eat, each buff the dish gives:</p>

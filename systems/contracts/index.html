@@ -570,6 +570,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1151,6 +1155,62 @@
   
   
     <li class="md-nav__item">
+      <a href="../logistics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Base Logistics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../milestones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Milestone Log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../scannerbot/" class="md-nav__link">
         
   
@@ -1637,7 +1697,7 @@
 <ul>
 <li><strong>Where:</strong> the Contract Board stands next to the trader at the <strong>Hideout</strong>. It's placed there automatically and can't be crafted.</li>
 <li><strong>4 offers</strong> and up to <strong>3 active contracts</strong>, shared by the whole party.</li>
-<li><strong>New offers every 20 minutes</strong>, or right away with <strong>New postings</strong> for 2 × your rank in scrip.</li>
+<li><strong>New offers every 20 minutes</strong>, or right away with <strong>New postings</strong> for 4 × your rank in scrip (more with Outpost Boards open).</li>
 <li><strong>6 contract types:</strong> Supply Run, Courier, Pest Control, Survey Post, Salvage, Catch Order.</li>
 <li><strong>Frontier Standing</strong> goes from rank 1 to rank 5. You need 5 / 15 / 35 / 70 finished contracts for ranks 2-5.</li>
 <li><strong>Rewards:</strong> 3-94 Frontier Scrip, a material bundle, a 50% chance of Frontier dishes. Tier 5 contracts also have a hidden chance of a <a href="../backpack/">Backpack Expansion</a>.</li>
@@ -1665,35 +1725,41 @@
 <li>The board always tries to keep <strong>4 offers</strong>, and avoids repeating a contract type, so the 4 offers are usually 4 different types.</li>
 <li><strong>Accepting</strong> an offer does <strong>not</strong> put a new one in its place. A new offer appears when a contract is <strong>claimed</strong>, at the next refresh, or when someone buys new postings.</li>
 <li><strong>Every 20 minutes</strong> all offers nobody has accepted are replaced. Everyone gets a chat line. Players within 200 m of the Hideout board also get an on-screen alert, but only while the party has a free active slot.</li>
-<li><strong>New postings</strong> replaces every unaccepted offer right away. It costs <strong>2 × your Standing rank</strong> in Frontier Scrip (2 at rank 1, 10 at rank 5), paid by whoever clicks. It doesn't reset the 20-minute timer.</li>
+<li><strong>New postings</strong> replaces every unaccepted offer right away. It costs <strong>4 × your Standing rank</strong> in Frontier Scrip, <strong>times one more for every open Outpost Board</strong> (so 4 at rank 1, 20 at rank 5, and 140 at rank 5 with six outposts open), paid by whoever clicks. The button shows the price. It doesn't reset the 20-minute timer.</li>
 </ul>
 <table>
 <thead>
 <tr>
 <th>Rank</th>
-<th>New postings cost</th>
+<th>New postings cost (no outposts)</th>
+<th>With 2 outposts open</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>1</td>
-<td>2 scrip</td>
+<td>4 scrip</td>
+<td>12 scrip</td>
 </tr>
 <tr>
 <td>2</td>
-<td>4 scrip</td>
+<td>8 scrip</td>
+<td>24 scrip</td>
 </tr>
 <tr>
 <td>3</td>
-<td>6 scrip</td>
+<td>12 scrip</td>
+<td>36 scrip</td>
 </tr>
 <tr>
 <td>4</td>
-<td>8 scrip</td>
+<td>16 scrip</td>
+<td>48 scrip</td>
 </tr>
 <tr>
 <td>5</td>
-<td>10 scrip</td>
+<td>20 scrip</td>
+<td>60 scrip</td>
 </tr>
 </tbody>
 </table>
@@ -1705,9 +1771,9 @@
 <li>If items were already handed in, Abandon asks first: the button turns into <strong>Confirm</strong> for a few seconds, and the handed-in items go back to <strong>the player who abandons</strong>. That player needs room for them.</li>
 <li><strong>Claiming</strong> gives the <strong>whole reward to the player who clicks Claim</strong>. If that player doesn't have room, nothing is lost. Make space and claim again.</li>
 </ul>
-<div class="admonition warning">
+<div class="admonition note">
 <p class="admonition-title">Refunds on \"any\" orders</p>
-<p>On an "(any)" order, such as <em>Lake Fish (any)</em> or <em>Campfire dishes (any)</em>, abandoning gives back the same <strong>number</strong> of items, but all as <strong>one</strong> kind from the list. That kind may not be what you handed in.</p>
+<p>On an "(any)" order, such as <em>Lake Fish (any)</em> or <em>Campfire dishes (any)</em>, abandoning gives back exactly the kinds and numbers you handed in.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">No rerolling by clicking</p>
@@ -1791,26 +1857,27 @@
 <tbody>
 <tr>
 <td>1</td>
-<td>6 Cotton · 60 Metal Blocks · 62 Potatoes · 12 Corn · 3 Campfire dishes (any)</td>
+<td>3 Cotton · 30 Metal Blocks · 30 Potatoes · 6 Corn · 3 Campfire dishes (any)</td>
 </tr>
 <tr>
 <td>2</td>
-<td>7 Component Kits · 4 Glue · 20 Cotton · 50 Chemicals · 3 Homestead dishes (any)</td>
+<td>5 Component Kits · 3 Glue · 15 Cotton · 37 Chemicals · 3 Homestead dishes (any)</td>
 </tr>
 <tr>
 <td>3</td>
-<td>26 Batteries · 37 Gas Canisters · 4 Circuit Boards · 11 Beeswax · 2 Expedition dishes (any)</td>
+<td>16 Batteries · 22 Gas Canisters · 3 Circuit Boards · 7 Beeswax · 4 Expedition dishes (any)</td>
 </tr>
 <tr>
 <td>4</td>
-<td>11 Circuit Boards · 6 Crystals · 11 Glowpoop · 3 Frontier Feast dishes (any)</td>
+<td>7 Circuit Boards · 4 Crystals · 7 Glowpoop · 2 Frontier Feast dishes (any)</td>
 </tr>
 <tr>
 <td>5</td>
-<td>16 Circuit Boards · 10 Crystals · 16 Glowpoop · 4 Frontier Feast dishes (any)</td>
+<td>12 Circuit Boards · 7 Crystals · 12 Glowpoop · 4 Frontier Feast dishes (any)</td>
 </tr>
 </tbody>
 </table>
+<p>Every ask in a tier costs about the goods its reward pays back, so the scrip is the profit.</p>
 <p>Dish asks take any dish of that cooking tier. See the <a href="../kitchen/">Frontier Kitchen</a>.</p>
 <h3 id="courier-sealed-parcel">Courier (Sealed Parcel)<a class="headerlink" href="#courier-sealed-parcel" title="Permanent link">&para;</a></h3>
 <p><img alt="" src="../../assets/icons/5d39dd15-9ecd-47da-81ab-a5f728797ffd.png" width="32" /> You get a <strong>Sealed Parcel</strong> when you accept. Carry it to the marked spot. The delivery happens by itself when <strong>any</strong> party member with a parcel in their inventory gets within <strong>20 m</strong> of the spot. Lost the parcel? Any board's <strong>New parcel</strong> button gives you another.</p>
@@ -1834,11 +1901,11 @@
 </tr>
 <tr>
 <td>3</td>
-<td>3 Tapebots</td>
+<td>5 Tapebots</td>
 </tr>
 <tr>
 <td>4</td>
-<td>2 Farmbots, or 3 Tapebots</td>
+<td>2 Farmbots, or 6 Tapebots</td>
 </tr>
 <tr>
 <td>5</td>
@@ -1849,7 +1916,8 @@
 <ul>
 <li>Robots that <strong>die in water</strong> (drowned, swimming or diving) don't count.</li>
 <li><strong>Raiders attacking your farm don't count.</strong></li>
-<li>One kill counts for one contract only. If two active hunts want the same robot, the older contract gets it.</li>
+<li>One kill counts for one contract only. A robot from a hunt's own pack counts for that hunt first; a wild robot goes to the older of two hunts that want it.</li>
+<li>If the whole pack is gone but the hunt isn't finished (a robot drowned, or its kill went to another hunt), the site spawns the missing robots the next time someone in the party comes within 150 m. Only the pack's own deaths trigger this, so it can't be used to farm packs.</li>
 <li>If the site turns out to be under water, the pack is moved to the nearest dry ground. If there's none nearby, the site is moved and marked somewhere drier.</li>
 </ul>
 <h3 id="survey-post-survey-beacon">Survey Post (Survey Beacon)<a class="headerlink" href="#survey-post-survey-beacon" title="Permanent link">&para;</a></h3>
@@ -2054,7 +2122,7 @@
 </table>
 <div class="admonition tip">
 <p class="admonition-title">The Frontier Rod</p>
-<p>Catch Orders of <strong>tier 3 and up</strong> include a <strong>Frontier Rod</strong> in their reward until someone in the party claims one. The Frontier Rod has no recipe, so this is the only way to get it. After the first one is claimed, new orders stop paying it.</p>
+<p>Catch Orders of <strong>tier 3 and up</strong> include a <strong>Frontier Rod</strong> in their reward until every player in the party has claimed one. The Frontier Rod has no recipe, so this is the only way to get it. Once the party has as many rods as players, new orders stop paying it. Legendary orders (Frontier Sturgeon, Crude Leviathan) are posted once the party has a Frontier Rod and has had Prime Bait in hand; the card says how far out the fish live.</p>
 </div>
 <h2 id="rewards">Rewards<a class="headerlink" href="#rewards" title="Permanent link">&para;</a></h2>
 <p>Every contract pays three things:</p>
@@ -2091,27 +2159,27 @@
 </tr>
 <tr>
 <td>Survey Post</td>
-<td>4</td>
-<td>8</td>
-<td>13</td>
-<td>21</td>
-<td>33</td>
-</tr>
-<tr>
-<td>Catch Order</td>
-<td>4</td>
-<td>8</td>
-<td>13</td>
-<td>21</td>
-<td>33</td>
-</tr>
-<tr>
-<td>Pest Control</td>
 <td>5</td>
 <td>10</td>
 <td>16</td>
 <td>26</td>
 <td>40</td>
+</tr>
+<tr>
+<td>Catch Order</td>
+<td>5</td>
+<td>10</td>
+<td>16</td>
+<td>26</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Pest Control</td>
+<td>4</td>
+<td>7</td>
+<td>12</td>
+<td>19</td>
+<td>30</td>
 </tr>
 <tr>
 <td>Salvage (Small crate)</td>
@@ -2173,15 +2241,15 @@
 </tr>
 <tr>
 <td>2</td>
-<td>3 Component Kits · 4 Glue · 2 Batteries</td>
+<td>3 Component Kits · 2 Glue · 10 Batteries</td>
 </tr>
 <tr>
 <td>3</td>
-<td>3 Circuit Boards · 5 Batteries · 10 Gas Canisters</td>
+<td>3 Circuit Boards · 12 Batteries · 15 Gas Canisters</td>
 </tr>
 <tr>
 <td>4</td>
-<td>4 Circuit Boards · 5 Component Kits · 8 Batteries</td>
+<td>4 Circuit Boards · 5 Component Kits · 18 Batteries</td>
 </tr>
 <tr>
 <td>5</td>
@@ -2189,7 +2257,7 @@
 </tr>
 </tbody>
 </table>
-<p>The base amount grows with better-paying contracts, but more slowly than the scrip does: about ×1.1 for Courier, Survey Post and Catch Order, ×1.27 for Pest Control, and from ×1.22 (Small crate) up to ×1.94 (Colossal crate) for Salvage. Supply Runs pay the base amount.</p>
+<p>The three bundles of a tier are worth about the same. The base amount grows with better-paying contracts, but more slowly than the scrip does: about ×1.1 for Courier and Pest Control, ×1.26 for Survey Post and Catch Order, and from ×1.22 (Small crate) up to ×1.94 (Colossal crate) for Salvage. Supply Runs pay the base amount.</p>
 </li>
 <li>
 <p><strong>A 50% chance of Frontier dishes:</strong> 2 dishes, or 3 on tier 4-5 contracts. They come from the highest cooking tier the party has researched (capped at the contract's tier), and the party's researched dishes are preferred. If the party hasn't researched any dishes yet, they're Campfire dishes. Traveling Trader dishes are never paid out.</p>
@@ -2217,7 +2285,7 @@
 </tr>
 <tr>
 <td>Pest Control</td>
-<td>8%</td>
+<td>5%</td>
 </tr>
 <tr>
 <td>Survey Post</td>
@@ -2225,7 +2293,7 @@
 </tr>
 <tr>
 <td>Catch Order</td>
-<td>8%</td>
+<td>6%</td>
 </tr>
 <tr>
 <td>Salvage</td>
@@ -2233,6 +2301,7 @@
 </tr>
 </tbody>
 </table>
+<p>Short contracts get less and long hauls get more, so per minute played Salvage is the best way to roll one.</p>
 <p>If it hits, the "Contract done" message says so, and the expansion is added to the reward you claim.</p>
 <h2 id="frontier-standing">Frontier Standing<a class="headerlink" href="#frontier-standing" title="Permanent link">&para;</a></h2>
 <p>Every finished contract adds one to the party's count. Standing is shared by the whole party.</p>
@@ -2268,7 +2337,7 @@
 <tr>
 <td>5</td>
 <td>70</td>
-<td>Tier 4-5 contracts. The Backpack Expansion chance. Legendary Catch Orders (with a Frontier Rod). New postings cost 10 scrip.</td>
+<td>Tier 4-5 contracts. The Backpack Expansion chance. Legendary Catch Orders (with a Frontier Rod). New postings cost 20 scrip (plus 20 per open Outpost Board).</td>
 </tr>
 </tbody>
 </table>
