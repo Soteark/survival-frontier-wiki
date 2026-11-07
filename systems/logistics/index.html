@@ -574,6 +574,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -833,6 +837,62 @@
     
   
     Backpack Expansions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spotlight/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spotlight
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../map-table/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Map Table
   
 
     
@@ -1494,6 +1554,10 @@
 <td>when the chest holding an item is full, the item takes an empty chest instead</td>
 </tr>
 <tr>
+<td>Chained chests</td>
+<td>chests placed <strong>touching</strong> a piped chest count too, and so do chests touching those: one pipe to the first chest of a wall of chests is enough, on the input side and the outputs. Only plain chests chain (any chest, the Large Chest included). A Craftbot, Scrapper or other machine touching a chest is left alone, and pipes leaving a chest aren't followed into another network.</td>
+</tr>
+<tr>
 <td>Loops</td>
 <td>a chest piped to both the input and an output side never gets its own items sent back to itself</td>
 </tr>
@@ -1508,7 +1572,7 @@
 <p><img alt="" src="../../assets/icons/c77b03a8-306b-4b33-ae54-8410925a89b9.png" width="32" /> A 3 × 3 × 2 screen with a pipe socket on the back. Pipe your chests into it and press <strong>Use</strong> for one list of everything in them: an icon, the name, how many, and how many chests hold it, sorted by name, ten to a page. The list refreshes once a second while it's open.</p>
 <ul>
 <li><strong>Search:</strong> type in the box at the top to filter by name. The status line says how many kinds match.</li>
-<li><strong>Take:</strong> pulls up to <strong>one stack</strong> of that item into your inventory, taking from however many chests it's spread across. If your inventory is full you're told, and nothing moves.</li>
+<li><strong>Take:</strong> pulls the <strong>amount</strong> shown beside it into your inventory, taking from however many chests the item is spread across. Each row's amount starts at <strong>one stack</strong> (or all of it, if the chests hold less). Type a number into the box, or use <strong>-</strong> and <strong>+</strong> to change it by one, or <strong>-10</strong> and <strong>+10</strong> to change it by ten. More than a stack is fine: it fills as many inventory slots as it needs. If your inventory fills up partway, you get what fits and the rest stays in the chests. If it's already full you're told, and nothing moves.</li>
 <li><strong>Store:</strong> puts away everything in your inventory that <strong>one of the chests already holds</strong>, into those chests. The <strong>hotbar row</strong> is left alone, so your tools stay in your hands, and items no chest holds (new kinds of thing) stay with you.</li>
 <li>The status line also shows how many of the chests' slots are used.</li>
 </ul>
