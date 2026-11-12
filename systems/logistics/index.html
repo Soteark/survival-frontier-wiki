@@ -1470,7 +1470,7 @@
 <li><strong>Trash Can:</strong> open it like a chest, drop junk in, and it's deleted when you <strong>close the window</strong>. Craftbot recipe, known from the start.</li>
 <li><strong>Item Sorter:</strong> sends each item to a chest that <strong>already holds that item</strong>; a new kind of item takes an <strong>empty chest</strong>. Blueprint (Uncommon).</li>
 <li><strong>Storage Terminal:</strong> one list of everything in the piped chests, with a <strong>search box</strong>, <strong>Take</strong> and <strong>Store</strong>. Blueprint (Uncommon).</li>
-<li><strong>Container Sensor:</strong> logic output when the piped chests are empty, not empty, over a quarter, half or three quarters full, or full. Blueprint (Common).</li>
+<li><strong>Container Sensor:</strong> logic output when the piped chests are empty, not empty, down to the last one of an item, over a quarter, half or three quarters full, or full. Blueprint (Common).</li>
 <li>Worlds started with <strong>Base Logistics</strong> off in the Frontier Setup get none of these recipes.</li>
 </ul>
 </div>
@@ -1600,6 +1600,10 @@
 <td>any slot is used</td>
 </tr>
 <tr>
+<td>all but one taken</td>
+<td>some item is down to its last one across the piped chests (counted per item, so one in each of two chests is two)</td>
+</tr>
+<tr>
 <td>over a quarter full</td>
 <td>at least a quarter of the slots are used</td>
 </tr>
@@ -1618,6 +1622,7 @@
 </tbody>
 </table>
 <ul>
+<li><strong>All but one taken</strong> is for keeping one of each item in a chest, so an Item Sorter keeps sending that item there: it can warn you, but nothing that takes items out (a Craftbot, the Storage Terminal, you) listens to it.</li>
 <li>It starts in <strong>full</strong> mode, and remembers its mode with the world.</li>
 <li>Looking at it shows the slots used, the output, and the current mode.</li>
 <li>With no chest piped to it, only the <em>empty</em> mode is on.</li>
