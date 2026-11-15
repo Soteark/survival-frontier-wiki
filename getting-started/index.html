@@ -16,7 +16,7 @@
         <link rel="prev" href="..">
       
       
-        <link rel="next" href="../commands/">
+        <link rel="next" href="../systems/frontier-setup/">
       
       
         
@@ -373,6 +373,8 @@
       
         
       
+        
+      
     
     
     
@@ -499,6 +501,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#frontier-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frontier Setup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#what-you-know-from-the-start" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -524,6 +537,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../systems/frontier-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frontier Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -628,6 +669,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -1163,6 +1208,62 @@
   
   
     <li class="md-nav__item">
+      <a href="../systems/zipline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zipline (test build)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../systems/grapple-gun/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Grapple Gun (test build)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../systems/gyro/" class="md-nav__link">
         
   
@@ -1410,6 +1511,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#frontier-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frontier Setup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#what-you-know-from-the-start" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1456,8 +1568,11 @@
 <li>Start Scrap Mechanic, choose <strong>Play → Custom Games</strong>, and pick <strong>Survival Frontier</strong>.</li>
 <li>Create a new world. Friends who join need the same mod version (see <a href="../multiplayer/">Multiplayer</a>).</li>
 </ol>
+<p>Survival Frontier needs the <strong>Mod Database</strong> mod. Steam subscribes you to it along with Survival Frontier, so there's nothing extra to do unless you unsubscribe from it.</p>
+<h2 id="frontier-setup">Frontier Setup<a class="headerlink" href="#frontier-setup" title="Permanent link">&para;</a></h2>
+<p>The first time the host spawns in a new world, the <strong><a href="../systems/frontier-setup/">Frontier Setup</a></strong> window opens. The host picks which Survival Frontier features this world uses (contracts, the trader, fishing, cooking and so on) and presses <strong>Start</strong>. The choice is locked after that. Closing the window without Start leaves the world waiting, and the starting recipes, contracts and the trader don't appear until the host types <code>/frontier</code> and finishes it. After Start, <code>/frontier</code> lists what's on and off.</p>
 <h2 id="what-you-know-from-the-start">What you know from the start<a class="headerlink" href="#what-you-know-from-the-start" title="Permanent link">&para;</a></h2>
-<p>A new Frontier world starts like vanilla Survival: crash site, Hideout and the vanilla progression. Three Frontier recipes are known from the start:</p>
+<p>A new Frontier world starts like vanilla Survival: crash site, Hideout and the vanilla progression. These Frontier recipes are known from the start (each only if its feature is on in the Frontier Setup):</p>
 <table>
 <thead>
 <tr>
@@ -1468,12 +1583,12 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../reference/items/#campfire">Campfire</a></td>
-<td>Workbench</td>
+<td><a href="../reference/items/#campfire">Campfire</a> and the three Classics dishes</td>
+<td>Workbench (the dishes cook on the Campfire or a Cookbot)</td>
 <td>Cook simple Frontier meals before you can afford a Cookbot. See <a href="../systems/kitchen/">Frontier Kitchen</a>.</td>
 </tr>
 <tr>
-<td><a href="../reference/items/#fishing-rod">Fishing Rod</a></td>
+<td><a href="../reference/items/#fishing-rod">Fishing Rod</a> and all baits</td>
 <td>Workbench or Craftbot</td>
 <td>Food from any lake, and fish for <a href="../systems/contracts/">Catch Orders</a>. See <a href="../systems/fishing/">Fishing</a>.</td>
 </tr>
@@ -1481,6 +1596,26 @@
 <td><a href="../reference/items/#scythe">Scythe</a></td>
 <td>Craftbot</td>
 <td>Clears bushes, logs and plants for good, so you can build. See <a href="../systems/clearing/">Land Clearing</a>.</td>
+</tr>
+<tr>
+<td><a href="../systems/logistics/">Trash Can</a></td>
+<td>Craftbot</td>
+<td>Deletes whatever you put in it. See <a href="../systems/logistics/">Base Logistics</a>.</td>
+</tr>
+<tr>
+<td><a href="../systems/spotlight/">Spotlight</a></td>
+<td>Craftbot (Tools tab)</td>
+<td>A bright handheld light you can clip to your head.</td>
+</tr>
+<tr>
+<td><a href="../reference/items/#frontier-plating">Frontier Plating</a></td>
+<td>Craftbot</td>
+<td>Tougher building plates. Always known.</td>
+</tr>
+<tr>
+<td><a href="../systems/zipline/">Zipline</a> Anchor and Trolley, and <a href="../systems/grapple-gun/">Grapple Gun</a> (test build)</td>
+<td>Craftbot</td>
+<td>Cables between towers to ride, and a hook to climb out of holes. Still being tested. Always known.</td>
 </tr>
 </tbody>
 </table>
@@ -1492,7 +1627,7 @@
 <li><strong>Find the Traveling Trader.</strong> Type <code>/trader</code> or follow his map marker. Your first scrip goes on Common blueprints. Every purchase raises the party's reputation with him, which opens the Uncommon, Rare and Legendary stock.</li>
 <li><strong>Build up the kitchen.</strong> Once you have a Cookbot, cook dishes you know to research new ones. Higher tiers give regeneration, damage resistance and deep breath. See <a href="../systems/kitchen/">Frontier Kitchen</a>.</li>
 <li><strong>Go further out.</strong> Higher Standing brings longer, better-paying contracts: Survey Posts, big Salvage hauls and legendary Catch Orders. From rank 3 you can buy <a href="../systems/contracts/">Outpost Boards</a> to get contracts posted far from the Hideout.</li>
-<li><strong>Late game.</strong> Remote Control for driving creations from outside, Teleport Pads, Mega Battery Banks and <a href="../systems/backpack/">Backpack Expansions</a> for up to 10 extra inventory rows.</li>
+<li><strong>Late game.</strong> Remote Control for driving creations from outside, Teleport Pads, the Mega Battery and <a href="../systems/backpack/">Backpack Expansions</a> for up to 10 extra inventory rows.</li>
 </ol>
 <div class="admonition tip">
 <p class="admonition-title">Useful commands</p>
@@ -1550,13 +1685,13 @@
         
         
           
-          <a href="../commands/" class="md-footer__link md-footer__link--next" aria-label="Next: Chat Commands">
+          <a href="../systems/frontier-setup/" class="md-footer__link md-footer__link--next" aria-label="Next: Frontier Setup">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Chat Commands
+                Frontier Setup
               </div>
             </div>
             <div class="md-footer__button md-icon">

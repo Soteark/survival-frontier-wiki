@@ -371,6 +371,8 @@
       
         
       
+        
+      
     
     
     
@@ -431,6 +433,34 @@
     
   
     First Steps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../frontier-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frontier Setup
   
 
     
@@ -545,6 +575,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -1025,6 +1059,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#upgrades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Upgrades
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#what-you-get-back" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1182,6 +1227,62 @@
     
   
     Scannerbot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zipline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zipline (test build)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grapple-gun/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Grapple Gun (test build)
   
 
     
@@ -1460,6 +1561,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#upgrades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Upgrades
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#what-you-get-back" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1581,7 +1693,7 @@
 <li>Connect a <strong>chest</strong> to it with <strong>vacuum pipes</strong>. Any of the Scrapper's three pipe rings works. You can pipe in more than one chest.</li>
 <li>Press <strong>Use</strong> on the Scrapper to open its input and drop items in.</li>
 </ol>
-<p>Look at the Scrapper to see what it's doing:</p>
+<p>Look at the Scrapper to see what it's doing. The line reads <strong>Scrapper L<em>n</em> (<em>N</em> input slots)</strong> followed by its status:</p>
 <table>
 <thead>
 <tr>
@@ -1609,6 +1721,12 @@
 </tbody>
 </table>
 <p>It works through one stack at a time and scraps the <strong>whole stack</strong> in one go. You'll see the materials fly down the pipe into the chest.</p>
+<h2 id="upgrades">Upgrades<a class="headerlink" href="#upgrades" title="Permanent link">&para;</a></h2>
+<p>Press <strong>Tinker</strong> on the Scrapper to open its upgrade window. Each level costs Component Kits: <strong>1, 2, 3 and 5</strong> (11 in all to reach level 5), and adds a row of 10 input slots.</p>
+<ul>
+<li>The upgrade is refused while anything is in the input: "Empty the Scrapper's input before upgrading it".</li>
+<li>If the input grows while someone has the window open, it closes with "Scrapper input grew to <em>N</em> slots - open it again".</li>
+</ul>
 <h2 id="what-you-get-back">What you get back<a class="headerlink" href="#what-you-get-back" title="Permanent link">&para;</a></h2>
 <p>For each item, the Scrapper looks up its recipe and adds up all the ingredients. You get <strong>80% of that total, rounded down</strong>, and always at least 1. Those units are then drawn at random from the recipe's ingredients, like cards from a deck, so you never get more of one ingredient than the recipe took.</p>
 <table>
@@ -1667,13 +1785,14 @@
 </tbody>
 </table>
 <h2 id="what-it-wont-break-down">What it won't break down<a class="headerlink" href="#what-it-wont-break-down" title="Permanent link">&para;</a></h2>
-<p>The Scrapper only uses <strong>Craftbot</strong> and <strong>Workbench</strong> recipes. Anything else goes through to the chest <strong>untouched</strong>:</p>
+<p>The Scrapper only uses <strong>Craftbot</strong>, <strong>Workbench</strong> and the vanilla saw table recipes. Anything else goes through to the chest <strong>untouched</strong>:</p>
 <ul>
 <li>items with no recipe, such as raw materials you've harvested, loot-only items and Backpack Expansions</li>
 <li>food and dishes cooked at the Cookbot or Campfire</li>
 <li>outfits from the Dressbot</li>
 <li>refined materials from the Refinery</li>
 <li>items whose only recipe is at a trader</li>
+<li>parts from other installed part mods, even though the Craftbot lists their recipes</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Older Scrappers</p>

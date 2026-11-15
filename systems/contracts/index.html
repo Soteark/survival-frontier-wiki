@@ -371,6 +371,8 @@
       
         
       
+        
+      
     
     
     
@@ -431,6 +433,34 @@
     
   
     First Steps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../frontier-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frontier Setup
   
 
     
@@ -545,6 +575,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -1329,6 +1363,62 @@
   
   
     <li class="md-nav__item">
+      <a href="../zipline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zipline (test build)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grapple-gun/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Grapple Gun (test build)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../gyro/" class="md-nav__link">
         
   
@@ -1809,7 +1899,7 @@
 <li><strong>Abandon</strong> gives up an active contract.</li>
 <li><strong>Footer:</strong> time left until the next refresh. On an Outpost Board it also says whether that outpost is open, and if not, why.</li>
 </ul>
-<p>Every board shows the <strong>same</strong> contracts. Hand-ins, claims and replacement items work at <strong>any</strong> Contract Board, the Hideout's or an outpost's. Salvage is the one exception (see <a href="#salvage">Salvage</a>).</p>
+<p>Every board shows the <strong>same</strong> contracts. Hand-ins, claims and replacement items work at <strong>any</strong> Contract Board, the Hideout's or an outpost's. Salvage is the one exception (see <a href="#salvage">Salvage</a>). The Hideout board's footer also says where the <a href="../trader/">Traveling Trader</a> was last seen.</p>
 <h2 id="offers-refreshes-and-new-postings">Offers, refreshes and new postings<a class="headerlink" href="#offers-refreshes-and-new-postings" title="Permanent link">&para;</a></h2>
 <ul>
 <li>The board always tries to keep <strong>4 offers</strong>, and avoids repeating a contract type, so the 4 offers are usually 4 different types.</li>
@@ -1857,7 +1947,10 @@
 <ul>
 <li>You can only accept while the party has fewer than <strong>3</strong> active contracts.</li>
 <li>Courier and Survey Post contracts give <strong>the player who accepts</strong> the item they need (a Sealed Parcel or a Survey Beacon). If that player's inventory is full, the contract can't be accepted.</li>
-<li><strong>Abandoning</strong> puts the contract back on the board <strong>exactly as it was offered</strong>: same site, same reward. It only goes back if there's a free offer slot (fewer than 4 offers). Its progress is reset, and any Salvage Crate already out in the world disappears.</li>
+<li><strong>Abandoning</strong> puts the contract back on the board <strong>exactly as it was offered</strong>: same site, same reward. It only goes back if there's a free offer slot (fewer than 4 offers). Its progress is reset, and any Salvage Crate already out in the world disappears.<ul>
+<li>The one exception is a <strong>Pest Control</strong> hunt whose pack has already turned up: abandoning it takes it off the board for good, so the button asks you to click again to confirm (<em>"Abandon? The pack is out, so this hunt leaves the board - click again"</em>).</li>
+</ul>
+</li>
 <li>If items were already handed in, Abandon asks first: the button turns into <strong>Confirm</strong> for a few seconds, and the handed-in items go back to <strong>the player who abandons</strong>. That player needs room for them.</li>
 <li><strong>Claiming</strong> gives the <strong>whole reward to the player who clicks Claim</strong>. If that player doesn't have room, nothing is lost. Make space and claim again.</li>
 </ul>
@@ -2006,7 +2099,7 @@
 <ul>
 <li>Robots that <strong>die in water</strong> (drowned, swimming or diving) don't count.</li>
 <li><strong>Raiders attacking your farm don't count.</strong></li>
-<li>At tiers 4 and 5, a pack sometimes includes one <a href="../elites/#elites-in-pest-control">elite</a>: a tougher robot that pays <strong>25% more scrip</strong> on the contract when you destroy it.</li>
+<li>At tiers 4 and 5, while Elite Creatures are on, a pack has a <strong>35%</strong> chance to include one <a href="../elites/#elites-in-pest-control">elite</a>: a tougher robot that pays <strong>25% more scrip</strong> on the contract when you destroy it.</li>
 <li>One kill counts for one contract only. A robot from a hunt's own pack counts for that hunt first; a wild robot goes to the older of two hunts that want it.</li>
 <li>If the whole pack is gone but the hunt isn't finished (a robot drowned, or its kill went to another hunt), the site spawns the missing robots the next time someone in the party comes within 150 m. Only the pack's own deaths trigger this, so it can't be used to farm packs.</li>
 <li>If the site turns out to be under water, the pack is moved to the nearest dry ground. If there's none nearby, the site is moved and marked somewhere drier.</li>
@@ -2134,7 +2227,7 @@
 </table>
 <p>The crate size is shown on the offer before you accept.</p>
 <ul>
-<li><strong>Where to deliver:</strong> a contract posted from an Outpost Board goes back to <strong>that Outpost Board</strong>, as long as it's still open and hasn't been moved more than 20 m. Otherwise (and for everything posted from the Hideout) it goes to the <strong>Hideout board</strong>.</li>
+<li><strong>Where to deliver:</strong> the <strong>Hideout board</strong> always takes it. A contract posted from an Outpost Board can also go back to <strong>that Outpost Board</strong>, as long as it's still open and hasn't been moved more than 20 m.</li>
 <li>The quest marker <strong>follows the crate</strong> once it's found.</li>
 <li>If the crate is <strong>destroyed</strong>, a new one waits back at the site.</li>
 <li>If the site is under water, the crate is placed on the nearest dry ground within 96 m. If there isn't any, the site moves about 250 m and is marked again.</li>
@@ -2179,7 +2272,7 @@
 </tr>
 </tbody>
 </table>
-<p>* Legendary orders are only offered once the party has a Frontier Rod, because these fish can't be landed without one. Orders for fish that need a Carbon Rod say so in their title.</p>
+<p>* Legendary orders are only offered once the party has a Frontier Rod (these fish can't be landed without one) and someone has had Prime Bait in hand. Orders for fish that need a Carbon Rod say so in their title.</p>
 <p>Catch Orders pay <strong>bait</strong> on top of the usual reward:</p>
 <table>
 <thead>
@@ -2393,7 +2486,7 @@
 </tbody>
 </table>
 <p>Short contracts get less and long hauls get more, so per minute played Salvage is the best way to roll one.</p>
-<p>If it hits, the "Contract done" message says so, and the expansion is added to the reward you claim.</p>
+<p>If it hits, the "Contract done" message says so, and the expansion is added to the reward you claim. If the player who claims it already has the maximum 10 extra rows, they get one of the tier's materials instead: 6 Circuit Boards, 8 Component Kits or 7 Crystals (<em>"Your backpack is already at the maximum - ..."</em>).</p>
 <h2 id="frontier-standing">Frontier Standing<a class="headerlink" href="#frontier-standing" title="Permanent link">&para;</a></h2>
 <p>Every finished contract adds one to the party's count. Standing is shared by the whole party.</p>
 <table>
@@ -2443,13 +2536,13 @@
 <li>at least <strong>1.5 km</strong> (measured flat on the map) from the Hideout board <strong>and</strong> from every Outpost Board that was already open</li>
 </ul>
 </li>
-<li>Open boards are numbered in order (<em>Outpost 1</em>, <em>Outpost 2</em> …). If one isn't open, its window's footer tells you why, for example "it's only 0.9 km from the board at the Hideout - it needs 1.5 km". When a board opens, everyone gets an alert.</li>
-<li><strong>What it does:</strong> once it's open, new location contracts are posted around it as well as around the Hideout. Each new site is centred on one of the open boards, picked at random. Salvage from those contracts is delivered to that Outpost Board. Like any board, it also takes hand-ins, claims and replacement parcels and beacons.</li>
-<li><strong>Moving it:</strong> pick it back up with the hammer and set it up somewhere else. You can't lift it onto a vehicle or build onto it. If an outpost is removed, a closed one nearby may open in its place.</li>
+<li>Each board gets a number the first time it's set up (<em>Outpost 1</em>, <em>Outpost 2</em> …), whether or not it opens, and numbers are never reused. If one isn't open, its window's footer tells you why, for example "it's only 0.9 km from the board at the Hideout - it needs 1.5 km". When a board opens, everyone gets an alert.</li>
+<li><strong>What it does:</strong> once it's open, new location contracts are posted around it as well as around the Hideout. Each new site is centred on one of the open boards, picked at random. Salvage from those contracts can be delivered to that Outpost Board or to the Hideout. Like any board, it also takes hand-ins, claims and replacement parcels and beacons.</li>
+<li><strong>Moving it:</strong> pick it back up with the hammer and set it up somewhere else. You can't while a Salvage contract posted from it is still out: deliver or abandon that first. You can't lift it onto a vehicle or build onto it. If an outpost is removed, a closed one nearby may open in its place.</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Where to put an outpost</p>
-<p>Put Outpost Boards near the far areas you want to work. Contracts posted from an outpost measure their distance from it, so your trips start out there and not at the Hideout. Salvage crates from those contracts only need to reach that outpost.</p>
+<p>Put Outpost Boards near the far areas you want to work. Contracts posted from an outpost measure their distance from it, so your trips start out there and not at the Hideout. Salvage crates from those contracts only need to reach that outpost (the Hideout takes them too).</p>
 </div>
 <h2 id="logbook-compass-and-markers">Logbook, compass and markers<a class="headerlink" href="#logbook-compass-and-markers" title="Permanent link">&para;</a></h2>
 <ul>
@@ -2465,6 +2558,10 @@
 <li>Items given on accept (parcel, beacon) and the reward on claim go to <strong>the player who clicks</strong>. Share them out yourselves.</li>
 <li>New postings are paid by whoever clicks the button.</li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Frontier Setup</p>
+<p>The whole board is the <strong>Contracts</strong> feature of the <a href="../frontier-setup/">Frontier Setup</a>. With <strong>Fishing</strong> off there are no Catch Orders, with <strong>Frontier Cooking</strong> off Supply Runs never ask for dishes and rewards never pay them, and with <strong>Backpack Expansions</strong> off tier 5 contracts have no backpack chance.</p>
+</div>
 
 
 

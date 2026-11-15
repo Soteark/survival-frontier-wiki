@@ -371,6 +371,8 @@
       
         
       
+        
+      
     
     
     
@@ -431,6 +433,34 @@
     
   
     First Steps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../frontier-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frontier Setup
   
 
     
@@ -545,6 +575,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -1185,6 +1219,62 @@
   
   
     <li class="md-nav__item">
+      <a href="../zipline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zipline (test build)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grapple-gun/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Grapple Gun (test build)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../gyro/" class="md-nav__link">
         
   
@@ -1593,16 +1683,17 @@
 </tr>
 <tr>
 <td>Logic</td>
-<td>wire a switch, button or Container Sensor to it: while the signal is <strong>off</strong>, it stops</td>
+<td>wire <strong>one</strong> switch, button or Container Sensor to it: while the signal is <strong>off</strong>, it stops</td>
 </tr>
 </tbody>
 </table>
+<p>Chaining touching chests is the Sorter's alone: the Storage Terminal and Container Sensor only see chests that are actually piped to them.</p>
 <p>Look at the Sorter to see what it's doing: <em>sorting</em>, <em>idle</em>, <em>off (wired signal)</em>, <em>connect chests to the side sockets with vacuum pipes</em>, or what it's stuck on.</p>
 <h2 id="storage-terminal">Storage Terminal<a class="headerlink" href="#storage-terminal" title="Permanent link">&para;</a></h2>
 <p><img alt="" src="../../assets/icons/c77b03a8-306b-4b33-ae54-8410925a89b9.png" width="32" /> A 3 × 3 × 2 screen with a pipe socket on the back. Pipe your chests into it and press <strong>Use</strong> for one list of everything in them: an icon, the name, how many, and how many chests hold it, sorted by name, ten to a page. The list refreshes once a second while it's open.</p>
 <ul>
 <li><strong>Search:</strong> type in the box at the top to filter by name. The status line says how many kinds match.</li>
-<li><strong>Take:</strong> pulls the <strong>amount</strong> shown beside it into your inventory, taking from however many chests the item is spread across. Each row's amount starts at <strong>one stack</strong> (or all of it, if the chests hold less). Type a number into the box, or use <strong>-</strong> and <strong>+</strong> to change it by one, or <strong>-10</strong> and <strong>+10</strong> to change it by ten. More than a stack is fine: it fills as many inventory slots as it needs. If your inventory fills up partway, you get what fits and the rest stays in the chests. If it's already full you're told, and nothing moves.</li>
+<li><strong>Take:</strong> pulls the <strong>amount</strong> shown beside it into your inventory, taking from however many chests the item is spread across. Each row's amount starts at <strong>one stack</strong> (or all of it, if the chests hold less). Type a number into the box, or use <strong>-</strong> and <strong>+</strong> to change it by one, or <strong>-10</strong> and <strong>+10</strong> to change it by ten. The buttons stop at 1 and at however many the chests hold. More than a stack is fine: it fills as many inventory slots as it needs. If your inventory fills up partway, you get what fits and the rest stays in the chests. If it's already full you're told, and nothing moves.</li>
 <li><strong>Store:</strong> puts away everything in your inventory that <strong>one of the chests already holds</strong>, into those chests. The <strong>hotbar row</strong> is left alone, so your tools stay in your hands, and items no chest holds (new kinds of thing) stay with you.</li>
 <li>The status line also shows how many of the chests' slots are used.</li>
 </ul>
@@ -1612,7 +1703,7 @@
 </div>
 <h2 id="container-sensor">Container Sensor<a class="headerlink" href="#container-sensor" title="Permanent link">&para;</a></h2>
 <p><img alt="" src="../../assets/icons/ac2d0d7f-eb11-446c-8fb8-dc94b6659e3d.png" width="32" /> A 1 × 1 × 1 block with a pipe socket on top and a <strong>logic output</strong>. Pipe it to a chest and wire its output to a light, a pump, an Item Sorter or anything else that takes a logic signal. Fullness is counted in <strong>slots used</strong>.</p>
-<p>It reads <strong>the chest nearest it along the pipes</strong>: a chest right on its socket, or else the one at the end of the shortest pipe. That way a sensor on one chest in a big network watches just that chest. Press <strong>Tinker</strong> to switch it to <strong>every piped chest</strong> (and again to switch back). Each sensor remembers its choice.</p>
+<p>It reads <strong>the chest nearest it along the pipes</strong>: a chest right on its socket, or else the one at the end of the shortest pipe. That way a sensor on one chest in a big network watches just that chest. If it can't find a chest along the pipes (a <a href="../pipe-coupler/">Pipe Coupler</a> in the way, for example), it reads the piped chest closest to it in a straight line. Press <strong>Tinker</strong> to switch it to <strong>every piped chest</strong> (and again to switch back). Each sensor remembers its choice.</p>
 <p>Press <strong>Use</strong> to step through what turns it on:</p>
 <table>
 <thead>
@@ -1632,7 +1723,7 @@
 </tr>
 <tr>
 <td>all but one taken</td>
-<td>some item is down to its last one across the piped chests (counted per item, so one in each of two chests is two)</td>
+<td>some item is down to its last one across the chests it reads (just the nearest chest unless you switched it to every piped chest; counted per item, so one in each of two chests is two)</td>
 </tr>
 <tr>
 <td>over a quarter full</td>

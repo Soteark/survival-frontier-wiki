@@ -371,6 +371,8 @@
       
         
       
+        
+      
     
     
     
@@ -431,6 +433,34 @@
     
   
     First Steps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../frontier-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frontier Setup
   
 
     
@@ -545,6 +575,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -993,6 +1027,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Rechargeable Battery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#in-a-battery-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In a Battery Container
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1259,6 +1310,62 @@
     
   
     Scannerbot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zipline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zipline (test build)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grapple-gun/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Grapple Gun (test build)
   
 
     
@@ -1617,6 +1724,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Rechargeable Battery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#in-a-battery-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In a Battery Container
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1681,7 +1805,7 @@
 
 
 <h1 id="power">Power<a class="headerlink" href="#power" title="Permanent link">&para;</a></h1>
-<p>Survival Frontier adds the first power source to Survival that makes energy instead of only storing it: <strong>solar</strong>. Solar Panels charge a <strong>Mega Battery Bank</strong> through a <strong>Charge Controller</strong>, and an <strong>Inverter</strong> turns the Bank's stored charge into power for the new devices: <strong>Floodlights</strong>, <strong>Chargers</strong> for <strong>Rechargeable Batteries</strong>, and <strong>Teleport Pads</strong>. Vanilla electric engines, drills and growbeds run straight off the Bank. Solar is slow and best at stationary outposts. Batteries stay the fast, portable option.</p>
+<p>Survival Frontier adds the first power source to Survival that makes energy instead of only storing it: <strong>solar</strong>. Solar Panels charge a <strong>Mega Battery Bank</strong> through a <strong>Charge Controller</strong>, and an <strong>Inverter</strong> turns the Bank's stored charge into power for the new devices: <strong>Floodlights</strong>, <strong>Chargers</strong> for <strong>Rechargeable Batteries</strong>, and <strong>Teleport Pads</strong>. Vanilla electric engines, drills and growbeds run straight off the Bank, and an Electric Engine can also run on charged Rechargeable Batteries from a vanilla Battery Container. Solar is slow and best at stationary outposts. Batteries stay the fast, portable option.</p>
 <div class="admonition info">
 <p class="admonition-title">At a glance</p>
 <ul>
@@ -1697,7 +1821,7 @@
 </div>
 <h2 id="how-power-flows">How power flows<a class="headerlink" href="#how-power-flows" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>Solar Panels ──► Charge Controller ──► Mega Battery Bank ──► Inverter ──► Floodlight / Charger / Teleport Pad
-                                              │                          (also Gyro Flywheels, Throttle Thrusters)
+                                              │                          (also Gyro Flywheels, Throttle Thrusters, Zipline Anchors)
                                               └──► electric engines, drills, growbeds (directly, like a battery container)
 </code></pre></div>
 <ul>
@@ -1742,7 +1866,7 @@
 </tr>
 <tr>
 <td>Teleport Pad</td>
-<td>Up to 2 Inverters</td>
+<td>Inverter (power) + an optional switch or other logic part (on/off), 3 wires in total</td>
 <td>Nothing</td>
 </tr>
 <tr>
@@ -1861,7 +1985,7 @@
 <p>Makes power from sunlight. Look at a panel to see its current output as a percentage and why ("Clear", "Cloudy", "Rain", "Night", "No open sky").</p>
 <ul>
 <li><strong>Clear day:</strong> 15 charge per panel per in-game day.</li>
-<li><strong>Daylight curve:</strong> output starts at 06:00, peaks at noon and stops at 18:00. Nothing at night.</li>
+<li><strong>Daylight curve:</strong> output starts at 04:00, peaks at noon and stops at 20:00. Nothing at night.</li>
 <li><strong>Clouds:</strong> cut output by up to 75%, depending on how cloudy it is (never below 25%).</li>
 <li><strong>Rain:</strong> 15% of normal, about 2.25 charge per day.</li>
 <li><strong>Open sky:</strong> anything up to 80 m straight above the panel blocks it completely ("No open sky").</li>
@@ -1919,21 +2043,21 @@
 <p>Stores up to <strong>100 charge</strong>. A Charge Controller fills it from solar with no battery at all. It also has one battery slot for a <strong>Mega Battery</strong> (100 charge) or a charged <strong>Rechargeable Battery</strong> (25 charge). A gauge on the Bank ticks down as it's used.</p>
 <ul>
 <li><strong>Solar charging:</strong> a Charge Controller wired into it fills it up to 100. No battery has to be in the slot for that.</li>
-<li><strong>Loading a battery:</strong> a battery in the slot is loaded only if its charge fits (the Bank's charge plus the battery's charge can't go over 100). A Mega Battery only loads into an empty Bank.</li>
-<li><strong>Locked slot:</strong> while a battery's charge is in use, the slot is locked ("cell locked until drained").</li>
-<li><strong>Running out:</strong> when the Bank reaches 0, the battery in the slot is spent. A Mega Battery is used up. A Rechargeable Battery comes back <strong>Empty</strong>, ready for a Charger.</li>
+<li><strong>Loading a battery:</strong> a battery in the slot hands its charge to the Bank at once, as soon as it fits (the Bank's charge plus the battery's can't go over 100). A Mega Battery is used up. A Rechargeable Battery comes straight back out <strong>Empty</strong>, ready for a Charger. The slot is free again right away.</li>
+<li><strong>Waiting for room:</strong> if the charge doesn't fit yet, the battery stays in the slot until the Bank has used enough. Look at the Bank: it says "(battery waits for room)".</li>
+<li><strong>No pipes:</strong> the Bank has no pipe opening, so a Craftbot can't spend its charge as Battery items.</li>
 <li><strong>Outputs:</strong> wire it straight to electric engines, drills and growbeds like a vanilla battery container, or to an Inverter for the new devices.</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>A Bank on solar that never runs dry never spends the battery in its slot. The battery is the reserve for nights and rainy days.</p>
+<p>Keep spare charged batteries in a chest, not in the slot: a battery in the slot is loaded as soon as there's room for it.</p>
 </div>
 <h2 id="mega-battery">Mega Battery<a class="headerlink" href="#mega-battery" title="Permanent link">&para;</a></h2>
 <p><img alt="" src="../../assets/icons/5bafb51b-d063-4904-b2b0-37397fe9cbdb.png" width="32" /></p>
 <p>Holds as much power as 100 Batteries. It only fits in a Mega Battery Bank and is used up when drained. It also counts as a power source for a powered Survey Post.</p>
 <h2 id="inverter">Inverter<a class="headerlink" href="#inverter" title="Permanent link">&para;</a></h2>
 <p><img alt="" src="../../assets/icons/4070e1e0-ec4a-4eae-9f14-d38a37c5eecd.png" width="32" /></p>
-<p>Turns stored Bank power into the power the new devices run on: Floodlights, Chargers, Teleport Pads, Gyro Flywheels and Throttle Thrusters. It keeps a small buffer of 2 charge for its devices and refills it from the first wired Bank that has charge. Some energy is lost in converting. Look at it to see its efficiency, devices wired and total charge available. Press <strong>Tinker</strong> to upgrade.</p>
+<p>Turns stored Bank power into the power the new devices run on: Floodlights, Chargers, Teleport Pads, Gyro Flywheels, Throttle Thrusters and Zipline Anchors (<a href="../zipline/">Zipline</a>, test build). It keeps a small buffer of 2 charge for its devices and refills it from the first wired Bank that has charge. Some energy is lost in converting. Look at it to see its efficiency, devices wired and total charge available. Press <strong>Tinker</strong> to upgrade.</p>
 <table>
 <thead>
 <tr>
@@ -1990,10 +2114,22 @@
 <p><img alt="" src="../../assets/icons/86f26d84-6bc7-4038-aa92-8e93d9c27963.png" width="32" /> <img alt="" src="../../assets/icons/56e1f267-1b5e-40db-a07c-fd2f07494a65.png" width="32" /></p>
 <p>Holds <strong>25 charge</strong>. It is crafted <strong>Empty</strong>, so charge it in a Charger first.</p>
 <ol>
-<li>Put the charged battery in a Mega Battery Bank's slot. It loads its 25 charge when that fits.</li>
-<li>When the Bank runs dry, the battery comes back Empty in the slot.</li>
+<li>Put the charged battery in a Mega Battery Bank's slot. Its 25 charge moves into the Bank as soon as it fits.</li>
+<li>The battery comes straight back Empty in the slot.</li>
 <li>Take it out, charge it in a Charger and use it again.</li>
 </ol>
+<p>Charged Rechargeables also run an Electric Engine from a vanilla Battery Container, see below.</p>
+<h3 id="in-a-battery-container">In a Battery Container<a class="headerlink" href="#in-a-battery-container" title="Permanent link">&para;</a></h3>
+<p>The vanilla <strong>Battery Container</strong> also takes Charged and Empty Rechargeable Batteries, next to normal Batteries.</p>
+<ul>
+<li><strong>Electric Engines only:</strong> an Electric Engine wired to the container uses them. Drills, growbeds and other machines still use normal Batteries only.</li>
+<li><strong>Batteries first:</strong> the engine burns a Rechargeable only while you drive it and once the normal Batteries are gone, both in the wired container and in the engine's own slot.</li>
+<li><strong>Run time:</strong> one Rechargeable lasts as long as 25 Batteries.</li>
+<li><strong>The Empty comes back:</strong> the spent battery goes back into the container (or another wired one) as an Empty Rechargeable, ready for the Charger. If every slot is full of Charged ones, the engine still runs and the Empty goes back as soon as a slot frees up.</li>
+<li><strong>The engine's own slot</strong> still takes normal Batteries only.</li>
+<li>An engine with only Rechargeables to run on still shows as fuelled.</li>
+<li>If the host turned <strong>Rechargeable Batteries</strong> off in the <a href="../frontier-setup/">Frontier Setup</a>, engines don't burn them and the trader doesn't sell the Rechargeable Battery or Charger blueprints. Batteries already in a container stay there.</li>
+</ul>
 <h2 id="charger">Charger<a class="headerlink" href="#charger" title="Permanent link">&para;</a></h2>
 <p><img alt="" src="../../assets/icons/b13ff226-1d2a-415e-bb09-c4348119fb23.png" width="32" /></p>
 <p>Fills Empty Rechargeable Batteries and <a href="../spotlight/">Spotlights</a> using power from an Inverter. Press <strong>Use</strong> to open it.</p>
@@ -2016,7 +2152,7 @@
 <p><img alt="" src="../../assets/icons/5e8206b5-6def-483e-ae63-cc2b72ad4306.png" width="32" /></p>
 <p>A logic part that turns <strong>on when it's dark</strong>. Press <strong>Use</strong> to flip it to <strong>on when light</strong>, and again to flip it back.</p>
 <ul>
-<li>It counts as dark while the sun is below 5% strength: from about 17:50 to about 06:10 in-game.</li>
+<li>It counts as dark while the sun is below 5% strength: from about 19:45 to about 04:15 in-game.</li>
 <li>It works anywhere, covered or not. It only goes by the time of day.</li>
 <li>Wire it into a Floodlight, or into anything a switch can control (up to 255 parts).</li>
 </ul>
