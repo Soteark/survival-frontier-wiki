@@ -578,6 +578,8 @@
       
         
       
+        
+      
     
     
     
@@ -669,6 +671,34 @@
     
   
     Contract Board
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Elite Creatures
   
 
     
@@ -1470,7 +1500,7 @@
 <li><strong>Trash Can:</strong> open it like a chest, drop junk in, and it's deleted when you <strong>close the window</strong>. Craftbot recipe, known from the start.</li>
 <li><strong>Item Sorter:</strong> sends each item to a chest that <strong>already holds that item</strong>; a new kind of item takes an <strong>empty chest</strong>. Blueprint (Uncommon).</li>
 <li><strong>Storage Terminal:</strong> one list of everything in the piped chests, with a <strong>search box</strong>, <strong>Take</strong> and <strong>Store</strong>. Blueprint (Uncommon).</li>
-<li><strong>Container Sensor:</strong> logic output when the piped chests are empty, not empty, down to the last one of an item, over a quarter, half or three quarters full, or full. Blueprint (Common).</li>
+<li><strong>Container Sensor:</strong> logic output when the nearest piped chest (or, with Tinker, every piped chest) is empty, not empty, down to the last one of an item, over a quarter, half or three quarters full, or full. Blueprint (Common).</li>
 <li>Worlds started with <strong>Base Logistics</strong> off in the Frontier Setup get none of these recipes.</li>
 </ul>
 </div>
@@ -1581,7 +1611,8 @@
 <p>Pipe the same chests to both. Dump everything you bring home into the Sorter's input, and find it again at the Terminal.</p>
 </div>
 <h2 id="container-sensor">Container Sensor<a class="headerlink" href="#container-sensor" title="Permanent link">&para;</a></h2>
-<p><img alt="" src="../../assets/icons/ac2d0d7f-eb11-446c-8fb8-dc94b6659e3d.png" width="32" /> A 1 × 1 × 1 block with a pipe socket on top and a <strong>logic output</strong>. Pipe it to a chest, or to a whole network of them, and wire its output to a light, a pump, an Item Sorter or anything else that takes a logic signal. Fullness is counted in <strong>slots used</strong> across every piped chest.</p>
+<p><img alt="" src="../../assets/icons/ac2d0d7f-eb11-446c-8fb8-dc94b6659e3d.png" width="32" /> A 1 × 1 × 1 block with a pipe socket on top and a <strong>logic output</strong>. Pipe it to a chest and wire its output to a light, a pump, an Item Sorter or anything else that takes a logic signal. Fullness is counted in <strong>slots used</strong>.</p>
+<p>It reads <strong>the chest nearest it along the pipes</strong>: a chest right on its socket, or else the one at the end of the shortest pipe. That way a sensor on one chest in a big network watches just that chest. Press <strong>Tinker</strong> to switch it to <strong>every piped chest</strong> (and again to switch back). Each sensor remembers its choice.</p>
 <p>Press <strong>Use</strong> to step through what turns it on:</p>
 <table>
 <thead>
@@ -1624,7 +1655,7 @@
 <ul>
 <li><strong>All but one taken</strong> is for keeping one of each item in a chest, so an Item Sorter keeps sending that item there: it can warn you, but nothing that takes items out (a Craftbot, the Storage Terminal, you) listens to it.</li>
 <li>It starts in <strong>full</strong> mode, and remembers its mode with the world.</li>
-<li>Looking at it shows the slots used, the output, and the current mode.</li>
+<li>Looking at it shows which chests it reads (nearest or all), the slots used, the output, and the current mode.</li>
 <li>With no chest piped to it, only the <em>empty</em> mode is on.</li>
 <li>It checks the chests twice a second.</li>
 </ul>
