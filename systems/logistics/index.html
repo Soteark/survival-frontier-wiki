@@ -1681,7 +1681,8 @@
 <ol>
 <li>A <a href="#sorting-chest">Sorting Chest</a> whose filter <strong>lists that item</strong>, with room for some of it.</li>
 <li>An output chest that <strong>already holds that item</strong>, with room for some of it. Put one Metal Block in a chest and that chest is your metal chest.</li>
-<li>If no chest holds it, an <strong>empty</strong> output chest. A new kind of item claims the first empty chest, so a row of empty chests sorts itself out as items arrive.</li>
+<li>A <strong>catch-all</strong>: a Sorting Chest with <strong>no items on its filter</strong> takes anything that has no chest yet. Use one for the leftovers.</li>
+<li>If there is no catch-all with room, an <strong>empty</strong> output chest. A new kind of item claims the first empty chest, so a row of empty chests sorts itself out as items arrive.</li>
 <li>Otherwise it <strong>waits</strong>, and looking at the Sorter tells you what it's stuck on: <em>no chest for Gear (put one in a chest, or add an empty chest)</em>. Other items keep flowing past it.</li>
 </ol>
 <table>
@@ -1730,7 +1731,8 @@
 <li><strong>Use</strong> opens it like a chest.</li>
 <li><strong>Tinker</strong> opens the <strong>filter window</strong>: a searchable list of items, each with <strong>Add</strong> or <strong>Remove</strong>, and <strong>Clear</strong> to empty the filter. You don't need to own an item to add it. Looking at the chest shows <em>Takes: anything</em>, or the items on its filter.</li>
 <li><strong>Item Sorter:</strong> a Sorting Chest whose filter lists the item gets it first. Other items are never sent into a chest that has a filter. If it is full, the item falls back to the usual rules.</li>
-<li><strong>Storage Terminal:</strong> <strong>Store</strong> follows the same rule.</li>
+<li><strong>Catch-all:</strong> a Sorting Chest with <strong>nothing on its filter</strong> takes whatever has no other chest: after the filtered chests and the chests already holding the item, before an empty chest is claimed. Looking at it shows <em>Takes: anything (catch-all for the Item Sorter)</em>.</li>
+<li><strong>Storage Terminal:</strong> <strong>Store</strong> follows the filter rule. It doesn't fill a catch-all: Store only puts away items a chest already holds.</li>
 <li>It counts as a chest for the Terminal, the Container Sensor and the Sorter's chaining.</li>
 <li>The filter is saved with the world.</li>
 <li>A Craftbot or Scrapper on the same pipes can still drop its output into it, filter or not.</li>
