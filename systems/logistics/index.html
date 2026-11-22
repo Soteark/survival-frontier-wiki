@@ -1126,6 +1126,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#sorting-chest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sorting Chest
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#storage-terminal" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1544,6 +1555,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#sorting-chest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sorting Chest
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#storage-terminal" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1583,19 +1605,20 @@
 
 
 <h1 id="base-logistics">Base Logistics<a class="headerlink" href="#base-logistics" title="Permanent link">&para;</a></h1>
-<p>Four parts for keeping a base tidy: a <strong>Trash Can</strong> for junk, an <strong>Item Sorter</strong> that puts things into the right chests, a <strong>Storage Terminal</strong> that shows and searches everything in your chests, and a <strong>Container Sensor</strong> that gives you a logic signal from how full they are. The Sorter, Terminal and Sensor all work on the chests <strong>connected to them with vacuum pipes</strong> (through <a href="../pipe-coupler/">Pipe Couplers</a> too), the same way a Craftbot finds its chests.</p>
+<p>Five parts for keeping a base tidy: a <strong>Trash Can</strong> for junk, an <strong>Item Sorter</strong> that puts things into the right chests, a <strong>Sorting Chest</strong> you tell which items to take, a <strong>Storage Terminal</strong> that shows and searches everything in your chests, and a <strong>Container Sensor</strong> that gives you a logic signal from how full they are. The Sorter, Terminal and Sensor all work on the chests <strong>connected to them with vacuum pipes</strong> (through <a href="../pipe-coupler/">Pipe Couplers</a> too), the same way a Craftbot finds its chests.</p>
 <div class="admonition info">
 <p class="admonition-title">At a glance</p>
 <ul>
 <li><strong>Trash Can:</strong> open it like a chest, drop junk in, and it's deleted when you <strong>close the window</strong>. Craftbot recipe, known from the start.</li>
 <li><strong>Item Sorter:</strong> sends each item to a chest that <strong>already holds that item</strong>; a new kind of item takes an <strong>empty chest</strong>. Blueprint (Uncommon).</li>
+<li><strong>Sorting Chest:</strong> a 100-slot chest with 4 pipe sockets and a <strong>filter</strong> you set with <strong>Tinker</strong>. The Sorter and the Terminal's Store fill it first and put nothing else in it. Comes with the Item Sorter blueprint.</li>
 <li><strong>Storage Terminal:</strong> one list of everything in the piped chests, with a <strong>search box</strong>, <strong>Take</strong> and <strong>Store</strong>. Blueprint (Uncommon).</li>
 <li><strong>Container Sensor:</strong> logic output when the nearest piped chest (or, with Tinker, every piped chest) is empty, not empty, down to the last one of an item, over a quarter, half or three quarters full, or full. Blueprint (Common).</li>
 <li>Worlds started with <strong>Base Logistics</strong> off in the Frontier Setup get none of these recipes.</li>
 </ul>
 </div>
 <h2 id="getting-the-parts">Getting the parts<a class="headerlink" href="#getting-the-parts" title="Permanent link">&para;</a></h2>
-<p>The Trash Can is a plain Craftbot recipe that every world knows. The other three are <strong>blueprints</strong> from the <a href="../trader/">Traveling Trader</a>: buy one once and the whole party can craft that part.</p>
+<p>The Trash Can is a plain Craftbot recipe that every world knows. The other four are <strong>blueprints</strong> from the <a href="../trader/">Traveling Trader</a>: buy one once and the whole party can craft that part.</p>
 <table>
 <thead>
 <tr>
@@ -1629,6 +1652,13 @@
 <td>20 s</td>
 </tr>
 <tr>
+<td>Sorting Chest</td>
+<td>comes with the Item Sorter blueprint</td>
+<td>Craftbot</td>
+<td>12 × Metal Block, 2 × Component Kit, 1 × Circuit Board</td>
+<td>15 s</td>
+</tr>
+<tr>
 <td>Storage Terminal</td>
 <td>blueprint, Uncommon, 72 scrip (Customer reputation)</td>
 <td>Craftbot</td>
@@ -1649,6 +1679,7 @@
 <p><img alt="" src="../../assets/icons/2d2823ee-0a85-4e07-a3ae-c16b01fc1f65.png" width="32" /> A 3 × 3 × 3 cube, the cross-section of a vacuum pipe, with a socket dead centre on three faces: <strong>input on the back</strong>, <strong>outputs on both sides</strong>. It takes items from its own input (Use opens it, 10 slots) and from any chest piped to the back socket, and sends each stack down the side pipes.</p>
 <p>Where a stack goes, in order:</p>
 <ol>
+<li>A <a href="#sorting-chest">Sorting Chest</a> whose filter <strong>lists that item</strong>, with room for some of it.</li>
 <li>An output chest that <strong>already holds that item</strong>, with room for some of it. Put one Metal Block in a chest and that chest is your metal chest.</li>
 <li>If no chest holds it, an <strong>empty</strong> output chest. A new kind of item claims the first empty chest, so a row of empty chests sorts itself out as items arrive.</li>
 <li>Otherwise it <strong>waits</strong>, and looking at the Sorter tells you what it's stuck on: <em>no chest for Gear (put one in a chest, or add an empty chest)</em>. Other items keep flowing past it.</li>
@@ -1670,12 +1701,16 @@
 <td>a stack that doesn't fit whole is split; what fits goes in and the rest waits</td>
 </tr>
 <tr>
+<td>Sorting Chests</td>
+<td>a Sorting Chest only ever receives items on its filter; if it is full the item falls back to the rules below</td>
+</tr>
+<tr>
 <td>Full chests</td>
 <td>when the chest holding an item is full, the item takes an empty chest instead</td>
 </tr>
 <tr>
 <td>Chained chests</td>
-<td>chests placed <strong>touching</strong> a piped chest count too, and so do chests touching those: one pipe to the first chest of a wall of chests is enough, on the input side and the outputs. Only plain chests chain (any chest, the Large Chest included). A Craftbot, Scrapper or other machine touching a chest is left alone, and pipes leaving a chest aren't followed into another network.</td>
+<td>chests placed <strong>touching</strong> a piped chest count too, and so do chests touching those: one pipe to the first chest of a wall of chests is enough, on the input side and the outputs. Only plain chests chain (any chest, the Large Chest and Sorting Chest included). A Craftbot, Scrapper or other machine touching a chest is left alone, and pipes leaving a chest aren't followed into another network.</td>
 </tr>
 <tr>
 <td>Loops</td>
@@ -1689,12 +1724,23 @@
 </table>
 <p>Chaining touching chests is the Sorter's alone: the Storage Terminal and Container Sensor only see chests that are actually piped to them.</p>
 <p>Look at the Sorter to see what it's doing: <em>sorting</em>, <em>idle</em>, <em>off (wired signal)</em>, <em>connect chests to the side sockets with vacuum pipes</em>, or what it's stuck on.</p>
+<h2 id="sorting-chest">Sorting Chest<a class="headerlink" href="#sorting-chest" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../../assets/icons/38e5572d-b2c0-4beb-a069-535da3b06e2e.png" width="32" /> A long 7 × 3 × 3 chest with 100 slots, as big as the XXL Chest, and <strong>four pipe sockets</strong>, each in the centre of its side: both ends, the back and the top. It unlocks with the Item Sorter blueprint, and worlds that already own that blueprint get the recipe quietly when they load.</p>
+<ul>
+<li><strong>Use</strong> opens it like a chest.</li>
+<li><strong>Tinker</strong> opens the <strong>filter window</strong>: a searchable list of items, each with <strong>Add</strong> or <strong>Remove</strong>, and <strong>Clear</strong> to empty the filter. You don't need to own an item to add it. Looking at the chest shows <em>Takes: anything</em>, or the items on its filter.</li>
+<li><strong>Item Sorter:</strong> a Sorting Chest whose filter lists the item gets it first. Other items are never sent into a chest that has a filter. If it is full, the item falls back to the usual rules.</li>
+<li><strong>Storage Terminal:</strong> <strong>Store</strong> follows the same rule.</li>
+<li>It counts as a chest for the Terminal, the Container Sensor and the Sorter's chaining.</li>
+<li>The filter is saved with the world.</li>
+<li>A Craftbot or Scrapper on the same pipes can still drop its output into it, filter or not.</li>
+</ul>
 <h2 id="storage-terminal">Storage Terminal<a class="headerlink" href="#storage-terminal" title="Permanent link">&para;</a></h2>
 <p><img alt="" src="../../assets/icons/c77b03a8-306b-4b33-ae54-8410925a89b9.png" width="32" /> A 3 × 3 × 2 screen with a pipe socket on the back. Pipe your chests into it and press <strong>Use</strong> for one list of everything in them: an icon, the name, how many, and how many chests hold it, sorted by name, ten to a page. The list refreshes once a second while it's open.</p>
 <ul>
 <li><strong>Search:</strong> type in the box at the top to filter by name. The status line says how many kinds match.</li>
 <li><strong>Take:</strong> pulls the <strong>amount</strong> shown beside it into your inventory, taking from however many chests the item is spread across. Each row's amount starts at <strong>one stack</strong> (or all of it, if the chests hold less). Type a number into the box, or use <strong>-</strong> and <strong>+</strong> to change it by one, or <strong>-10</strong> and <strong>+10</strong> to change it by ten. The buttons stop at 1 and at however many the chests hold. More than a stack is fine: it fills as many inventory slots as it needs. If your inventory fills up partway, you get what fits and the rest stays in the chests. If it's already full you're told, and nothing moves.</li>
-<li><strong>Store:</strong> puts away everything in your inventory that <strong>one of the chests already holds</strong>, into those chests. The <strong>hotbar row</strong> is left alone, so your tools stay in your hands, and items no chest holds (new kinds of thing) stay with you.</li>
+<li><strong>Store:</strong> puts away everything in your inventory that <strong>a Sorting Chest's filter lists, or one of the chests already holds</strong>, into those chests. The <strong>hotbar row</strong> is left alone, so your tools stay in your hands, and items no chest holds (new kinds of thing) stay with you.</li>
 <li>The status line also shows how many of the chests' slots are used.</li>
 </ul>
 <div class="admonition tip">

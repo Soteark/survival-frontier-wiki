@@ -1644,7 +1644,7 @@
 <p class="admonition-title">At a glance</p>
 <ul>
 <li><strong>Returns 80%</strong> of a recipe's materials, rounded down (always at least 1).</li>
-<li><strong>3 seconds</strong> per input stack, <strong>20</strong> input slots (two rows). Each upgrade (Tinker, Component Kits) adds another row of 10, up to <strong>60</strong> at level 5. A Scrapper placed before this grows to its level's size the first time its input is empty.</li>
+<li><strong>3 seconds</strong> per input stack, <strong>20</strong> input slots (two rows). Each upgrade (Tinker, Component Kits) adds another row of 10, up to <strong>60</strong> at level 5. A Scrapper placed when the input was smaller gets its level's size when the world loads, items and all.</li>
 <li>Needs a <strong>chest connected by a vacuum pipe</strong>. With no piped chest it won't start.</li>
 <li>Items with no recipe pass through to the chest unchanged.</li>
 <li><strong>How to get it:</strong> a Traveling Trader blueprint (Uncommon, 72 scrip, Customer reputation), then craft it at the Craftbot.</li>
@@ -1690,7 +1690,7 @@
 <h2 id="setting-it-up">Setting it up<a class="headerlink" href="#setting-it-up" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Place the Scrapper.</li>
-<li>Connect a <strong>chest</strong> to it with <strong>vacuum pipes</strong>. Any of the Scrapper's three pipe rings works. You can pipe in more than one chest.</li>
+<li>Connect a <strong>chest</strong> to it with <strong>vacuum pipes</strong>. All three of the Scrapper's pipe rings work, together. You can pipe in more than one chest: the nearest one along the pipes is filled first, and when it's full the materials go to the next.</li>
 <li>Press <strong>Use</strong> on the Scrapper to open its input and drop items in.</li>
 </ol>
 <p>Look at the Scrapper to see what it's doing. The line reads <strong>Scrapper L<em>n</em> (<em>N</em> input slots)</strong> followed by its status:</p>
@@ -1718,6 +1718,10 @@
 <td>piped chest full</td>
 <td>Every piped chest is full. It waits and tries again each second. Nothing is lost</td>
 </tr>
+<tr>
+<td>(<em>N</em> passed-on items wait for chest room)</td>
+<td>Items another machine dropped in (see below) that no piped chest has room for. They wait; scrapping carries on</td>
+</tr>
 </tbody>
 </table>
 <p>It works through one stack at a time and scraps the <strong>whole stack</strong> in one go. You'll see the materials fly down the pipe into the chest.</p>
@@ -1725,8 +1729,8 @@
 <p>Press <strong>Tinker</strong> on the Scrapper to open its upgrade window. Each level costs Component Kits: <strong>1, 2, 3 and 5</strong> (11 in all to reach level 5), and adds a row of 10 input slots.</p>
 <ul>
 <li>The upgrade is refused while anything is in the input: "Empty the Scrapper's input before upgrading it".</li>
-<li>If the input grows while someone has the window open, it closes with "Scrapper input grew to <em>N</em> slots - open it again".</li>
 </ul>
+<p>You can't pick the Scrapper up while anything is in its input: "Empty the Scrapper first".</p>
 <h2 id="what-you-get-back">What you get back<a class="headerlink" href="#what-you-get-back" title="Permanent link">&para;</a></h2>
 <p>For each item, the Scrapper looks up its recipe and adds up all the ingredients. You get <strong>80% of that total, rounded down</strong>, and always at least 1. Those units are then drawn at random from the recipe's ingredients, like cards from a deck, so you never get more of one ingredient than the recipe took.</p>
 <table>
@@ -1756,6 +1760,7 @@
 </tbody>
 </table>
 <p>If an item can be crafted in more than one place, the <strong>cheapest</strong> recipe counts, so scrapping never pays more than crafting cost.</p>
+<p><strong>Upgraded parts</strong> (a level 3 seat, a level 5 gas engine, an upgraded Craftbot, Turret Seat, Plasma Drill, Charge Controller, Inverter or Scrapper) count as their level 1 recipe <strong>plus the Component Kits (or Multi Component Kits) the upgrades took</strong>. A Gas Engine level 3, say, is its recipe plus 4 + 6 = 10 Component Kits.</p>
 <h3 id="recipes-that-make-several-items">Recipes that make several items<a class="headerlink" href="#recipes-that-make-several-items" title="Permanent link">&para;</a></h3>
 <p>Some recipes make several items at once (Carbon Pipes come 10 at a time, for example). These only scrap as <strong>whole batches</strong>: you need the full amount in one stack. Any leftover too small for a batch passes through untouched.</p>
 <table>
@@ -1785,18 +1790,21 @@
 </tbody>
 </table>
 <h2 id="what-it-wont-break-down">What it won't break down<a class="headerlink" href="#what-it-wont-break-down" title="Permanent link">&para;</a></h2>
-<p>The Scrapper only uses <strong>Craftbot</strong>, <strong>Workbench</strong> and the vanilla saw table recipes. Anything else goes through to the chest <strong>untouched</strong>:</p>
+<p>The Scrapper uses the <strong>Craftbot</strong> recipes (other installed mods' Craftbot recipes too), the <strong>Workbench</strong>, the vanilla saw table, and the bots made at the warehouse and mining hub dispensers (Craftbot, Cookbot, Refinebot, Sawbot and so on). Anything else goes through to the chest <strong>untouched</strong>:</p>
 <ul>
 <li>items with no recipe, such as raw materials you've harvested, loot-only items and Backpack Expansions</li>
 <li>food and dishes cooked at the Cookbot or Campfire</li>
 <li>outfits from the Dressbot</li>
 <li>refined materials from the Refinery</li>
 <li>items whose only recipe is at a trader</li>
-<li>parts from other installed part mods, even though the Craftbot lists their recipes</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Older Scrappers</p>
 <p>Scrappers placed before the pipe update have a second, old output bin. If there's anything in it, it's emptied into the piped chest before anything new is scrapped.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Other machines on the same pipes</p>
+<p>To the pipes the Scrapper is a container, like a chest. A Craftbot, vacuum or other machine sharing its pipes may drop items into it: those are passed on to your chests <strong>unscrapped</strong>. Only what you put in its input window gets scrapped. The Item Sorter, Storage Terminal and Container Sensor don't count the Scrapper as storage, and the Scrapper never sends to them.</p>
 </div>
 <h2 id="craftbot-cancel-buttons">Craftbot cancel buttons<a class="headerlink" href="#craftbot-cancel-buttons" title="Permanent link">&para;</a></h2>
 <p>While a <strong>Craftbot</strong> window is open, a strip of red <strong>CANCEL</strong> buttons sits between the window and your hotbar, one under each crafting slot that's in use.</p>

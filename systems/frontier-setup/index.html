@@ -529,6 +529,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#changing-features-later" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changing features later
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#frontier" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -547,6 +558,67 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="What &#34;off&#34; means">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contracts-and-trading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contracts and Trading
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#survival-and-world" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Survival and World
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interface
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trader-blueprints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trader Blueprints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools-and-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tools and Base
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1500,6 +1572,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#changing-features-later" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changing features later
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#frontier" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1518,6 +1601,67 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="What &#34;off&#34; means">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contracts-and-trading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contracts and Trading
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#survival-and-world" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Survival and World
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interface
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trader-blueprints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trader Blueprints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools-and-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tools and Base
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1539,23 +1683,29 @@
 
 
 <h1 id="frontier-setup">Frontier Setup<a class="headerlink" href="#frontier-setup" title="Permanent link">&para;</a></h1>
-<p>When you start a <strong>new world</strong>, the host picks which Survival Frontier features it uses. Turn off what you don't want, for example fishing or the Scannerbot, and the rest of the mod works as usual.</p>
+<p>When you start a <strong>new world</strong>, the host picks which Survival Frontier features it uses. Turn off what you don't want, for example fishing or the Scannerbot, and the rest of the mod works as usual. The host can change most of them later.</p>
 <div class="admonition info">
 <p class="admonition-title">At a glance</p>
 <ul>
 <li>The window opens for the <strong>host</strong> on a new world's first spawn, before the intro.</li>
-<li>One <strong>ON / OFF</strong> switch per feature, an <strong>All On</strong> button, and <strong>Start</strong>.</li>
-<li><strong>Start is final:</strong> the choices are locked for that world.</li>
-<li>Type <code>/frontier</code> to see what a world uses (see <a href="../../commands/">Chat Commands</a>).</li>
+<li>Features are in <strong>groups</strong>, two columns, one small <strong>ON / OFF</strong> switch each, plus <strong>All On</strong>, <strong>Close</strong> and <strong>Start</strong>.</li>
+<li>Type <code>/frontier</code> <strong>any time</strong> to open the window again. The host changes features and presses <strong>Apply</strong>; everyone else can look.</li>
+<li><strong>Land Clearing</strong> can only be chosen before Start: it changes the terrain. It shows <strong>(set at world start)</strong> after that.</li>
 <li>Worlds made before the setup existed have everything on.</li>
 </ul>
 </div>
 <h2 id="the-window">The window<a class="headerlink" href="#the-window" title="Permanent link">&para;</a></h2>
-<p>"Choose which Survival Frontier features this world uses, then press Start. This is locked once you start. Things you have already built always keep working."</p>
 <ul>
-<li>A feature that depends on one that's off shows <strong>(needs ...)</strong> and can't be switched on. Turning off Contracts also turns off the Traveling Trader and Elite Creatures, for example.</li>
+<li>A feature that needs one that's off shows <strong>(needs ...)</strong> and can't be switched on. Turning off Contracts also turns off the Traveling Trader, and with it Elite Creatures and every Trader Blueprint. Turn Contracts back on and they come back as you left them.</li>
 <li>After <strong>Start</strong>, everyone sees a chat line: "<em>host</em> finished the Frontier Setup. Off in this world: ...".</li>
 <li>If the host closes the window without pressing Start, the world waits: contracts, the trader, Backpack Expansion loot and the starting Frontier recipes all hold off until the setup is finished. The host types <code>/frontier</code> to open the window again.</li>
+</ul>
+<h2 id="changing-features-later">Changing features later<a class="headerlink" href="#changing-features-later" title="Permanent link">&para;</a></h2>
+<ul>
+<li>The host types <code>/frontier</code>, flips switches and presses <strong>Apply</strong>. A changed switch shows a yellow <strong>*</strong>, and the status line counts the changes not applied yet.</li>
+<li>Everyone sees a chat line: "<em>host</em> changed the Frontier features: Fishing on, Frontier Cooking off."</li>
+<li>Some switches (<strong>Frontier Cooking</strong>, <strong>Craftbot Cancel Buttons</strong>, <strong>Modded Craftbot Recipes</strong>) change Craftbot or Cookbot windows: they finish the next time the world loads.</li>
+<li>The Scannerbot switch and <code>/scannerbot on|off</code> are the same switch.</li>
 </ul>
 <h2 id="frontier">/frontier<a class="headerlink" href="#frontier" title="Permanent link">&para;</a></h2>
 <table>
@@ -1570,18 +1720,18 @@
 <tr>
 <td>Host</td>
 <td>opens the setup window again</td>
-<td>lists what's on and off</td>
+<td>opens the window to change features</td>
 </tr>
 <tr>
 <td>Everyone else</td>
 <td>"The host hasn't finished the Frontier Setup yet."</td>
-<td>lists what's on and off</td>
+<td>opens the window to look (switches are grey)</td>
 </tr>
 </tbody>
 </table>
-<p>The Scannerbot isn't in the list: it has its own command, <code>/scannerbot</code> (see <a href="../scannerbot/">Scannerbot</a>).</p>
 <h2 id="what-off-means">What "off" means<a class="headerlink" href="#what-off-means" title="Permanent link">&para;</a></h2>
-<p>Turning a feature off stops anything <strong>new</strong> from it: its recipes aren't unlocked, the trader doesn't sell its blueprints, and it doesn't turn up in loot or contracts. Recipes from a feature that's off show as locked in crafters. Anything already built keeps working.</p>
+<p>Turning a feature off stops anything <strong>new</strong> from it: its recipes aren't unlocked, the trader doesn't sell its blueprints, and it doesn't turn up in loot or contracts. Recipes the party already learned stay learned, and anything already built keeps working. Turning a feature on later unlocks its starting recipes and puts its blueprints back in the shop.</p>
+<h3 id="contracts-and-trading">Contracts and Trading<a class="headerlink" href="#contracts-and-trading" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1592,12 +1742,31 @@
 <tbody>
 <tr>
 <td><strong>Contracts</strong></td>
-<td>No contracts are posted and the Outpost Board isn't sold. Also turns off the Traveling Trader and Elite Creatures. See <a href="../contracts/">Contract Board</a>.</td>
+<td>No new contracts are posted and the Outpost Board isn't sold. Also turns off the Traveling Trader. See <a href="../contracts/">Contract Board</a>.</td>
 </tr>
 <tr>
 <td><strong>Traveling Trader</strong></td>
-<td>The trader never camps, so none of his blueprints can be bought: Scrapper, Pipe Coupler, Gyro parts, Wireless Link, Map Table, the solar chain, the logistics parts, Remote Control and Teleport Pads. Also turns off Elite Creatures. See <a href="../trader/">Traveling Trader</a>.</td>
+<td>Needs Contracts. The trader never camps and sells nothing. Also turns off Elite Creatures and every Trader Blueprint. See <a href="../trader/">Traveling Trader</a>.</td>
 </tr>
+<tr>
+<td><strong>Elite Creatures</strong></td>
+<td>Needs the Traveling Trader. The trader never offers to stir up the robots, and no new elites appear. See <a href="../elites/">Elite Creatures</a>.</td>
+</tr>
+<tr>
+<td><strong>Backpack Expansions</strong></td>
+<td>None in loot, contract rewards, the trader's gear, Sunken Crates or elite drops. See <a href="../backpack/">Backpack Expansions</a>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="survival-and-world">Survival and World<a class="headerlink" href="#survival-and-world" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Switch</th>
+<th>Turning it off</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td><strong>Fishing</strong></td>
 <td>No Fishing Rod or bait recipes, no Carbon Rod blueprint, no Catch Orders, and elites drop no fishing gear. See <a href="../fishing/">Fishing</a>.</td>
@@ -1607,40 +1776,121 @@
 <td>No Campfire or Frontier dishes; the Cookbot keeps its vanilla recipes and window. The trader's dish recipes are hidden and contracts don't pay in food. See <a href="../kitchen/">Frontier Kitchen</a>.</td>
 </tr>
 <tr>
-<td><strong>Backpack Expansions</strong></td>
-<td>None in loot, contract rewards, the trader's gear, Sunken Crates or elite drops. See <a href="../backpack/">Backpack Expansions</a>.</td>
+<td><strong>Land Clearing</strong></td>
+<td>Set at world start only. No Scythe recipe, and plants can't be cleared. See <a href="../clearing/">Land Clearing</a>.</td>
 </tr>
 <tr>
-<td><strong>Land Clearing</strong></td>
-<td>No Scythe recipe. A Scythe you already have still works. See <a href="../clearing/">Land Clearing</a>.</td>
+<td><strong>Scannerbot</strong></td>
+<td>The vanilla flying missile drone is off. Same switch as <code>/scannerbot</code>. See <a href="../scannerbot/">Scannerbot</a>.</td>
 </tr>
+</tbody>
+</table>
+<h3 id="interface">Interface<a class="headerlink" href="#interface" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Switch</th>
+<th>Turning it off</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Milestone News</strong></td>
+<td>No chat news when the party reaches a milestone. The Milestone Log still counts.</td>
+</tr>
+<tr>
+<td><strong>Craftbot Cancel Buttons</strong></td>
+<td>No cancel buttons under the Craftbot window (after the world loads again).</td>
+</tr>
+<tr>
+<td><strong>Modded Craftbot Recipes</strong></td>
+<td>Other mods' Craftbot recipes aren't unlocked for you.</td>
+</tr>
+<tr>
+<td><strong>Bug Reports</strong></td>
+<td>Always on: <code>/bugreport</code> has no switch.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="trader-blueprints">Trader Blueprints<a class="headerlink" href="#trader-blueprints" title="Permanent link">&para;</a></h3>
+<p>All of these need the Traveling Trader. Turning one off hides its blueprints in the shop.</p>
+<table>
+<thead>
+<tr>
+<th>Switch</th>
+<th>Blueprints</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Map Table</strong></td>
+<td>The Map Table. The map still fills in while you explore, so a table bought later is up to date.</td>
+</tr>
+<tr>
+<td><strong>Remote Control</strong></td>
+<td>The Remote Controller and Remote Camera. See <a href="../remote-control/">Remote Control</a>.</td>
+</tr>
+<tr>
+<td><strong>Wireless Link</strong></td>
+<td>The Transmitter and Receiver.</td>
+</tr>
+<tr>
+<td><strong>Solar Power</strong></td>
+<td>Solar Panel, Charge Controller, Inverter, Mega Battery Bank, Mega Battery, Floodlight and Light Sensor. See <a href="../power/">Power</a>.</td>
+</tr>
+<tr>
+<td><strong>Teleport Pads</strong></td>
+<td>The Teleport Pad. Also needs Solar Power: a pad runs off an Inverter.</td>
+</tr>
+<tr>
+<td><strong>Scrapper</strong></td>
+<td>The Scrapper.</td>
+</tr>
+<tr>
+<td><strong>Pipe Parts</strong></td>
+<td>The Pipe Coupler and Carbon Pipes.</td>
+</tr>
+<tr>
+<td><strong>Gyro and Signal Parts</strong></td>
+<td>Gyro Flywheels, the signal parts and the Throttle Thruster.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tools-and-base">Tools and Base<a class="headerlink" href="#tools-and-base" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Switch</th>
+<th>Turning it off</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td><strong>Rechargeable Batteries</strong></td>
 <td>The Rechargeable Battery and Charger blueprints are hidden, and Electric Engines stop drawing Rechargeables from a Battery Container. See <a href="../power/">Power</a>.</td>
 </tr>
 <tr>
 <td><strong>Base Logistics</strong></td>
-<td>No Trash Can recipe, and the Item Sorter, Storage Terminal and Container Sensor blueprints are hidden. See <a href="../logistics/">Base Logistics</a>.</td>
+<td>No Trash Can recipe, and the Item Sorter, Sorting Chest, Storage Terminal and Container Sensor blueprints are hidden. See <a href="../logistics/">Base Logistics</a>.</td>
 </tr>
 <tr>
-<td><strong>Remote Control</strong></td>
-<td>The Remote Control and Remote Camera blueprints are hidden. The Wireless Link isn't affected. See <a href="../remote-control/">Remote Control</a>.</td>
+<td><strong>Grapple Gun</strong></td>
+<td>No Grapple Gun recipe at the Craftbot.</td>
 </tr>
 <tr>
-<td><strong>Teleport Pads</strong></td>
-<td>The Teleport Pad blueprint is hidden.</td>
+<td><strong>Ziplines</strong></td>
+<td>No Zipline Anchor or Trolley recipe at the Craftbot.</td>
 </tr>
 <tr>
-<td><strong>Elite Creatures</strong></td>
-<td>The trader never offers to stir up the robots, and no elites appear. See <a href="../elites/">Elite Creatures</a>.</td>
+<td><strong>Spotlight</strong></td>
+<td>No Spotlight recipe at the Craftbot.</td>
 </tr>
 <tr>
-<td><strong>Scannerbot</strong></td>
-<td>The vanilla flying missile drone is off. The host can still change this later with <code>/scannerbot</code>. See <a href="../scannerbot/">Scannerbot</a>.</td>
+<td><strong>Frontier Plating</strong></td>
+<td>No Frontier Plating recipe at the Craftbot.</td>
 </tr>
 </tbody>
 </table>
-<p>The Zipline, Grapple Gun, Spotlight, Map Table, Milestone Log and Gyro parts have no switch of their own (the Map Table and Gyro parts still need the trader).</p>
 
 
 
